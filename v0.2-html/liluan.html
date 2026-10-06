@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Web</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+.cac_hoc_phan_h2
+{
+    text-align:center;
+    margin: 20px auto;
+    color:black;
+}
+header {
+    background-color: #075e2f;
+    color: white;
+    padding: 20px 8%; /* tren duoi trai phai*/
+    z-index: 1000; /*mọi thứ trong header sẽ đè vào những thứ khác*/
+}
+header h1 {
+    margin-bottom: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+.dau_trang
+{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.logo_truong
+{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    border-radius:50px;
+}
+    </style>
+</head>
+
+<body>
+    <header> 
+        <div class="dau_trang">
+             <img src="images/logo_TBU.png" class="logo_truong">
+            <div>
+                <h1>Giới thiệu các khóa học dành cho sinh viên K66 ĐHSP Tin</h1>
+                 <nav>
+                    <a href="index.html">Trang chủ</a>
+                    <a href="#tailieu">Tài liệu bên ngoài cho các học phần</a>
+                 </nav>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

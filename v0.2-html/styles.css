@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+.cac_hoc_phan_h2
+{
+    text-align:center;
+    margin: 20px auto;
+    color:black;
+}
+header {
+    background-color: #075e2f;
+    color: white;
+    padding: 20px 8%; /* tren duoi trai phai*/
+    z-index: 1000; /*mọi thứ trong header sẽ đè vào những thứ khác*/
+}
+header h1 {
+    margin-bottom: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+.dau_trang
+{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.logo_truong
+{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    border-radius:50px;
+}
+#hocphan
+{
+    display:flex;
+    flex-wrap:wrap; /* không đủ chỗ thì xuống dòng*/
+    gap:20px;
+
+}
+.hoc_phan {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+     display: flex;
+    flex-direction: column; /*sếp các phần tử theo hàng dọc, ta có p, có h và có cái nút bấm xem chi tiết cái môn học*/
+}
+.hoc_phan h3 { 
+    margin-bottom: 12px;
+    color: #075e2f;
+}
+.hoc_phan p {
+    line-height: 1.5; /*dịch sang tiếng việt là độ rộng của dòng*/
+    margin-bottom: 18px; /*cách trên 18px*/
+}
+.hoc_phan a {
+    color: white;
+    background-color: #075e2f;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    align-self:center; 
+    margin-top:auto; /*Nếu còn khoảng trắng phía trên thì nó lấy, nếu ko thì nội dung này sẽ dính vào dòng chữ ở trên mất*/
+}
+footer
+{
+    display:flex;
+    text-align:center;
+    margin-top:30px;
+    justify-content:center;
+}
