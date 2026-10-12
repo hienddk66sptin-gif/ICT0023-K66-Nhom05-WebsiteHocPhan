@@ -54,4 +54,4 @@ Ngày 12 tháng 10 năm 2026
 -prompt chính: "trang web của tôi đang thiếu responsive, hưỡng dẫn tôi từng bước để tôi responsive cho các mục html trong trang web của tôi phù hợp với các kích thước của màn hình máy tính, điện thoại"
 -Phần tiếp nhận: Đã lấy các cấu trúc CSS, tạo 1 file CSS có tên là responsive để có thể cho toàn bộ tab html đều có responsive, cũng như bổ sung liên kết của responsive.css lên toàn bộ các trang html để toàn bộ web đều có chức năng responsive.
 -Phần loại bỏ: Không có
--Cách kiểm chứng: Mở file html trên trình duyệt chrome, thử co dãn tab của google to, nhỏ để kiểm tra tính responsive của trang web
+-Cách kiểm chứng: Mở file html trên trình duyệt chrome, thử co dãn tab của google to, nhỏ để kiểm tra tính responsive của trang web.
