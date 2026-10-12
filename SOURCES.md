@@ -34,6 +34,7 @@ Ngày 12 tháng 10 năm 2026
 -Tên ảnh: dai_hoc_tay_bac.jpg
 - Dữ liệu/nguồn gốc: Website của trường
 -Quyền sử dụng: Không có bản quyền hay tác giả cụ thể
+
 *Ảnh 2: Logo trường Đại Học Tây Bắc
 - Tên ảnh: logo_UTB.png
 - Dữ liệu/ nguồn gốc: https://haitrieu.com/blogs/vector-logo-truong-dai-hoc-tay-bac-utb/?srsltid=AU7gw4WkMLL1hXrTR2pu8XCd_46uzZga8Sdrlrsp3TcON81o1p8Y-uce
