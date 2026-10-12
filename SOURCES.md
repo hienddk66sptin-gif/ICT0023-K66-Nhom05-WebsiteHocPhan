@@ -25,8 +25,10 @@ Ngày 12 tháng 10 năm 2026
 
 1: Tài liệu
 -Không sử dụng
+
 2: Mã tham khảo
 -Không sử dụng
+
 3: Ảnh/ dữ liệu
 *Ảnh 1: Ảnh chụp trường đại học Tây Bắc
 -Tên ảnh: dai_hoc_tay_bac.jpg
@@ -36,6 +38,7 @@ Ngày 12 tháng 10 năm 2026
 - Tên ảnh: logo_UTB.png
 - Dữ liệu/ nguồn gốc: https://haitrieu.com/blogs/vector-logo-truong-dai-hoc-tay-bac-utb/?srsltid=AU7gw4WkMLL1hXrTR2pu8XCd_46uzZga8Sdrlrsp3TcON81o1p8Y-uce
 - Quyền sử dụng: May in thêu Hải Chiều
+
 4: Công cụ A.I
 - Công cụ: Chat GPT
 - Ngày sử dụng: 12/10/2026
