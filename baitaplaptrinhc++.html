@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập - Thiết kế Web</title>
+    <title>Bài tập Ngôn ngữ lập trình C++</title>
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="baitap.css">
 </head>
@@ -24,6 +24,20 @@
             <li>Chương trình phải chạy ổn, không bị nhảy chương trình.</li>
              <li>Lưu bài làm dưới dạng tệp CPP.</li>
         </ul>
+        <p>
+            <strong>Hạn nộp:</strong>
+            <time id="han_nop" datetime="2026-10-27T23:59:00">
+                27/10/2026 lúc 23:59
+            </time>
+        </p>
+
+        <div id="khu_vuc_dem_nguoc" class="dem_nguoc">
+            <h3>⏳ Thời gian còn lại đến hạn nộp</h3>
+            <p id="thoi_gian_con_lai" role="status" aria-live="polite">
+                Đang chờ khởi tạo đồng hồ...
+            </p>
+        </div>
+
         <hr>
         <h2 class="tieu_de_nop_bai">Nộp bài tập</h2>
         <form id="form_nop_bai">
@@ -48,12 +62,16 @@
                     type="file"
                     id="file_bai_tap"
                     name="file_bai_tap"
-                    accept=".html,.css,.js,.zip,.rar,.pdf" required
+                    accept=".cpp,.h,.hpp,.zip,.rar,.pdf" required
                 >
             </div> 
-            <p id="trang_thai_nop_bai">
-                Trạng thái: Chưa nộp bài.
-            </p>
+           <p id="trang_thai_nop_bai">
+              Trạng thái: Chưa nộp bài.
+           </p>
+           <div id="ket_qua_thoi_gian_nop" aria-live="polite">
+            <p>Thời điểm nộp: Chưa có.</p>
+            <p>Kết quả: Chưa nộp bài.</p>
+           </div>
             <button class="nut_nop_bai_o_cuoi" type="submit">Nộp bài</button> 
         </form>
     </section>
@@ -62,5 +80,6 @@
         <p>© 2026 - Website giới thiệu học phần, nhóm 5</p>
     </footer>
         <script src="nopbaitap.js"> </script>
+        <script src="demnguoc.js"></script>
 </body>
 </html>
