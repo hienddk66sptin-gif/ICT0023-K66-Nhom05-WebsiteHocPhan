@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Web</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: black;
+}
+.cac_hoc_phan_h2
+{
+    text-align:center;
+    margin: 20px auto;
+    color:black;
+}
+header {
+    background-color: #075e2f;
+    color: white;
+    padding: 20px 8%; /* tren duoi trai phai*/
+    z-index: 1000; /*mọi thứ trong header sẽ đè vào những thứ khác*/
+}
+header h1 {
+    margin-bottom: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+.dau_trang
+{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.logo_truong
+{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    border-radius:50px;
+}
+.noi_dung_hoc_phan 
+{ 
+    background-color: white; 
+    margin: 25px 8%; 
+    padding: 25px;
+     border: 1px solid #d5e8dc; 
+     border-radius: 12px;
+}
+
+.noi_dung_hoc_phan h3 {
+    color: #075e2f;
+    font-size: 23px;
+    margin-bottom: 20px; /*cách nội dung dưới 20px*/
+    padding-bottom: 12px;
+    border-bottom: 2px solid #d5e8dc; /*TẠO ĐƯỜNG Viền thôi, chỉ chiếm đúng khoảng cách của h3*/
+}
+.noi_dung_hoc_phan p 
+{ 
+    color: black; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin-bottom: 12px;
+ }
+.noi_dung_hoc_phan ul, .noi_dung_hoc_phan ol
+{ 
+     padding-left: 25px;
+     margin-bottom: 15px;
+}
+.noi_dung_hoc_phan li
+{ 
+     margin-bottom: 8px;
+     line-height: 1.6; /*Tăng khoảng cách giữa các dòng ở li*/
+ }
+ .noi_dung_hoc_phan h5
+{
+     color: black;
+     font-size: 15px;
+     margin-top: 10px; 
+     margin-bottom: 8px;
+     font-weight:600;
+}
+.noi_dung_hoc_phan h4 
+{ 
+      color: #356b4b; 
+      font-size: 18px; 
+      font-weight: 600;
+      margin-top: 22px;
+      margin-bottom: 10px; 
+}
+.nut_xem_thong_tin 
+{ 
+    display: inline-block; /*cho phần tử nằm chung dòng với pt khác, ở đâu nó chung với class tai_lieu*/
+    background-color: #075e2f; 
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px; 
+    font-weight: 500;
+    transition: 0.3s; 
+}
+.nut_xem_thong_tin:hover
+{
+    background-color: #0a8443; /* Màu xanh lá tươi hơn, sáng hơn */
+    transform: translateY(-3px); /* Nhích lên trên 3px */
+    box-shadow: 0 4px 12px rgba(7, 94, 47, 0.35); /* Đổ bóng cùng tông màu xanh giúp nút nổi bật hơn */
+}
+.tai_lieu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: #f5faf6;
+    border: 1px solid #d5e8dc;
+    border-radius: 10px;
+
+    padding: 20px;
+    margin-top: 12px;
+
+    transition: 0.3s;
+}
+
+.tai_lieu:hover {
+    border-color: #075e2f;
+    background-color: #edf7f0;
+}
+
+    </style>
+</head>
+
+<body>
+    <header> 
+        <div class="dau_trang">
+             <img src="images/logo_TBU.png" class="logo_truong">
+            <div>
+                <h1>Giới thiệu các khóa học dành cho sinh viên K66 ĐHSP Tin</h1>
+                 <nav>
+                    <a href="index.html">Trang chủ</a>
+                 </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+    <section class="noi_dung_hoc_phan">
+    <h3>GIỚI THIỆU CHI TIẾT VỀ HỌC PHẦN</h3>
+
+    <h4>Mô tả tóm tắt học phần</h4>
+    <p>
+        Cấu trúc dữ liệu và giải thuật cung cấp cho sinh viên những kiến thức
+        cơ bản về cách tổ chức, lưu trữ và xử lý dữ liệu trong chương trình.
+        Học phần đồng thời giúp sinh viên hiểu và xây dựng các giải thuật
+        nhằm giải quyết các bài toán trong lập trình.
+    </p>
+
+    <p class="ghi_chu">
+        Học phần kết hợp giữa lý thuyết và thực hành lập trình,
+        giúp sinh viên rèn luyện tư duy thuật toán và kỹ năng cài đặt
+        các cấu trúc dữ liệu bằng ngôn ngữ C++.
+    </p>
+
+
+    <h4>Mục tiêu học phần</h4>
+
+    <h5>Mục tiêu chung</h5>
+    <ul>
+        <li>
+            Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc dữ liệu
+            và giải thuật thường được sử dụng trong lập trình.
+        </li>
+
+        <li>
+            Giúp sinh viên biết cách lựa chọn và sử dụng cấu trúc dữ liệu
+            phù hợp để tổ chức và xử lý dữ liệu.
+        </li>
+
+        <li>
+            Rèn luyện tư duy phân tích bài toán, xây dựng giải thuật
+            và cài đặt chương trình bằng ngôn ngữ C++.
+        </li>
+    </ul>
+
+
+    <h5>Mục tiêu cụ thể</h5>
+    <ul class="danh_sach_muc_tieu">
+        <li>
+            Mục tiêu 1: Hiểu được các khái niệm cơ bản về dữ liệu,
+            cấu trúc dữ liệu, giải thuật và vai trò của chúng trong lập trình.
+        </li>
+
+        <li>
+            Mục tiêu 2: Biết cách tổ chức và xử lý dữ liệu bằng các cấu trúc
+            dữ liệu cơ bản như mảng, danh sách liên kết, ngăn xếp và hàng đợi.
+        </li>
+
+        <li>
+            Mục tiêu 3: Hiểu và cài đặt được một số thuật toán tìm kiếm
+            và sắp xếp cơ bản.
+        </li>
+
+        <li>
+            Mục tiêu 4: Làm quen với các khái niệm cơ bản về cây,
+            cây nhị phân và cây tìm kiếm nhị phân.
+        </li>
+
+        <li>
+            Mục tiêu 5: Rèn luyện khả năng phân tích bài toán,
+            xây dựng giải thuật và cài đặt chương trình bằng C++.
+        </li>
+    </ul>
+
+
+    <h4>Chuẩn đầu ra của học phần</h4>
+    <ul class="danh_sach_chuan_dau_ra">
+        <li>
+            Chuẩn đầu ra 1: Trình bày được các khái niệm cơ bản về
+            cấu trúc dữ liệu và giải thuật.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 2: Thực hiện được các thao tác cơ bản trên
+            mảng và các cấu trúc dữ liệu tuyến tính.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 3: Cài đặt được danh sách liên kết và thực hiện
+            các thao tác duyệt, thêm, xóa và tìm kiếm phần tử.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 4: Hiểu và cài đặt được các thao tác cơ bản
+            trên ngăn xếp và hàng đợi.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 5: Hiểu được cấu trúc cây và thực hiện được
+            một số thao tác cơ bản trên cây nhị phân.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 6: Áp dụng được các thuật toán tìm kiếm và
+            sắp xếp cơ bản vào các bài toán lập trình.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 7: Phân tích được bài toán và lựa chọn cấu trúc
+            dữ liệu, giải thuật phù hợp để giải quyết bài toán.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 8: Vận dụng ngôn ngữ C++ để cài đặt và thực hành
+            các cấu trúc dữ liệu và giải thuật đã học.
+        </li>
+    </ul>
+</section>
+<section class="noi_dung_hoc_phan">
+    <h3>NỘI DUNG HỌC TẬP</h3>
+    <h4>1. Tổng quan về cấu trúc dữ liệu và giải thuật</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Khái niệm dữ liệu và cấu trúc dữ liệu.</li>
+        <li>Khái niệm giải thuật và vai trò của giải thuật trong lập trình.</li>
+        <li>Mối quan hệ giữa cấu trúc dữ liệu và giải thuật.</li>
+        <li>Các bước cơ bản để xây dựng và thực hiện một giải thuật.</li>
+    </ul>
+    <h4>2. Mảng và các thao tác trên mảng</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Mảng một chiều và mảng hai chiều.</li>
+        <li>Nhập, xuất và duyệt các phần tử trong mảng.</li>
+        <li>Tìm kiếm, thêm và xóa phần tử trong mảng.</li>
+        <li>Giải quyết các bài toán cơ bản trên mảng.</li>
+    </ul>
+    <h4>3. Danh sách liên kết</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Khái niệm Node và danh sách liên kết.</li>
+        <li>Cấu tạo và nguyên lý hoạt động của danh sách liên kết đơn.</li>
+        <li>Khởi tạo và duyệt danh sách liên kết.</li>
+        <li>Thêm và xóa phần tử trong danh sách.</li>
+        <li>Tìm kiếm và xử lý dữ liệu trong danh sách liên kết.</li>
+        <li>Giới thiệu danh sách liên kết đôi.</li>
+    </ul>
+    <h4>4. Ngăn xếp và hàng đợi</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Khái niệm và đặc điểm của ngăn xếp (Stack).</li>
+        <li>Các thao tác cơ bản trên Stack.</li>
+        <li>Khái niệm và đặc điểm của hàng đợi (Queue).</li>
+        <li>Các thao tác cơ bản trên Queue.</li>
+        <li>Ứng dụng của Stack và Queue trong lập trình.</li>
+    </ul>
+    <h4>5. Cây và cây nhị phân</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Khái niệm cơ bản về cây.</li>
+        <li>Cây nhị phân và các thành phần của cây.</li>
+        <li>Cây tìm kiếm nhị phân.</li>
+        <li>Thêm và tìm kiếm phần tử trên cây.</li>
+        <li>Các phương pháp duyệt cây cơ bản.</li>
+    </ul>
+    <h4>6. Thuật toán tìm kiếm</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Khái niệm tìm kiếm dữ liệu.</li>
+        <li>Tìm kiếm tuần tự.</li>
+        <li>Tìm kiếm nhị phân.</li>
+        <li>So sánh và lựa chọn phương pháp tìm kiếm phù hợp.</li>
+    </ul>
+    <h4>7. Thuật toán sắp xếp</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Khái niệm và vai trò của việc sắp xếp dữ liệu.</li>
+        <li>Thuật toán Bubble Sort.</li>
+        <li>Thuật toán Selection Sort.</li>
+        <li>Thuật toán Insertion Sort.</li>
+        <li>Thực hành cài đặt các thuật toán sắp xếp bằng C++.</li>
+    </ul>
+    <h4>8. Thực hành và vận dụng</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Cài đặt các cấu trúc dữ liệu bằng C++.</li>
+        <li>Thực hành giải quyết các bài toán bằng cấu trúc dữ liệu phù hợp.</li>
+        <li>Kết hợp cấu trúc dữ liệu và giải thuật trong xây dựng chương trình.</li>
+        <li>Ôn tập và thực hành tổng hợp các nội dung đã học.</li>
+    </ul>
+</section>
+<section class="noi_dung_hoc_phan">
+    <h3>KẾ HOẠCH HỌC TẬP</h3>
+    <h4>Phân bổ thời gian</h4>
+    <p>
+        Học phần Cấu trúc dữ liệu và giải thuật được tổ chức theo hướng
+        kết hợp giữa học lý thuyết và thực hành lập trình. Sinh viên
+        từng bước tiếp cận các cấu trúc dữ liệu và giải thuật từ cơ bản
+        đến nâng cao hơn.
+    </p>
+    <ul>
+        <li>
+            <strong>Tổng thời lượng:</strong>
+            15 tuần học
+        </li>
+        <li>
+            <strong>Lý thuyết:</strong>
+            Tìm hiểu khái niệm, nguyên lý và cách hoạt động của
+            các cấu trúc dữ liệu và giải thuật.
+        </li>
+        <li>
+            <strong>Thực hành:</strong>
+            Cài đặt và thực hiện các bài toán bằng ngôn ngữ C++.
+        </li>
+        <li>
+            <strong>Tự học:</strong>
+            Ôn tập kiến thức, hoàn thành bài tập và thực hành thêm
+            các bài toán liên quan.
+        </li>
+    </ul>
+    <h4>Trình tự học tập</h4>
+    <ol>
+        <li>
+            <strong>Tuần 1 - 2:</strong>
+            Tìm hiểu tổng quan về cấu trúc dữ liệu và giải thuật,
+            các khái niệm cơ bản và cách xây dựng giải thuật.
+        </li>
+        <li>
+            <strong>Tuần 3 - 4:</strong>
+            Học về mảng một chiều, mảng hai chiều và các thao tác
+            xử lý dữ liệu trên mảng.
+        </li>
+        <li>
+            <strong>Tuần 5 - 7:</strong>
+            Tìm hiểu danh sách liên kết, Node, con trỏ và các thao tác
+            duyệt, thêm, xóa, tìm kiếm trên danh sách.
+        </li>
+        <li>
+            <strong>Tuần 8:</strong>
+            Tìm hiểu ngăn xếp (Stack), các thao tác cơ bản
+            và một số ứng dụng.
+        </li>
+        <li>
+            <strong>Tuần 9:</strong>
+            Tìm hiểu hàng đợi (Queue), các thao tác cơ bản
+            và cách cài đặt.
+        </li>
+        <li>
+            <strong>Tuần 10 - 11:</strong>
+            Tìm hiểu cây, cây nhị phân, cây tìm kiếm nhị phân
+            và các phương pháp duyệt cây.
+        </li>
+        <li>
+            <strong>Tuần 12:</strong>
+            Học các thuật toán tìm kiếm cơ bản,
+            bao gồm tìm kiếm tuần tự và tìm kiếm nhị phân.
+        </li>
+        <li>
+            <strong>Tuần 13 - 14:</strong>
+            Học và thực hành các thuật toán sắp xếp cơ bản
+            như Bubble Sort, Selection Sort và Insertion Sort.
+        </li>
+        <li>
+            <strong>Tuần 15:</strong>
+            Ôn tập và thực hành tổng hợp các cấu trúc dữ liệu
+            và giải thuật đã học.
+        </li>
+    </ol>
+</section>
+<section class="noi_dung_hoc_phan"> 
+    <h3>TÀI LIỆU HỌC TẬP</h3>
+    <p class="mo_ta_tai_lieu">
+        Tổng hợp giáo trình, tài liệu tham khảo và các nguồn học tập
+        phục vụ quá trình học lý thuyết và thực hành môn
+        Cấu trúc dữ liệu và giải thuật.
+    </p>
+    <h4>Giáo trình chính</h4>
+    <div class="tai_lieu">
+        <div class="thong_tin_tai_lieu">
+            <h5>Giáo trình Cấu trúc dữ liệu và giải thuật</h5>
+            <p>
+                Tài liệu cung cấp các kiến thức cơ bản về cấu trúc dữ liệu,
+                giải thuật và phương pháp cài đặt các cấu trúc dữ liệu
+                trong lập trình.
+            </p>
+            <p>Tác giả: Đinh Mạnh Tường</p>
+        </div>
+        <a href="giao trinh/Giáo trình CTDLTT - Đinh Mạnh Tường.pdf" class="nut_xem_thong_tin">Mở tài liệu</a>
+    </div>
+</section>
+</main>
+</body>
+</html>
