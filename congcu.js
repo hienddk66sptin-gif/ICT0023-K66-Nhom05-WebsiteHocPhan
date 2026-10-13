@@ -1,23 +1,20 @@
-let diemQuaTrinh=document.getElementById("diem_qua_trinh"); //tạo 1 biến diemquatrinh để lưu thông tin, tìm phần tử html theo id
-let diem_QT = diemQuaTrinh.value; //value có nghĩa là lấy giá trị hiện tại của ô nhập, nếu nhập 8.5 thì value sẽ nhận giá trị "8.5" dưới dạng chuỗi kĩ tự
-let diem_so_QT=Number(diem_QT);//Biến cái giá trị vừa nhận trên kia thành number để tính toán, không sẽ dễ gây lỗi trong quá trình tính toán
-let diemGiuaKy=document.getElementById("diem_giua_ky");
-let diem_GK=diemGiuaKy.value;
-let diem_so_GK=Number(diem_GK);
-let diemCuoiKy=document.getElementById("diem_cuoi_ky");
-let diem_CK=diemCuoiKy.value;
-let diem_so_CK=Number(diem_CK);
 
-diemQuaTrinh.addEventListener("input", function()
-{
-    console.log(diemQuaTrinh.value);
-});
-diemGiuaKy.addEventListener("input", function()
-{
-    console.log(diemGiuaKy.value);
-});
+const diemQuaTrinh = document.getElementById("diem_qua_trinh");
+const diemGiuaKy = document.getElementById("diem_giua_ky");
+const diemCuoiKy = document.getElementById("diem_cuoi_ky");
 
-diemCuoiKy.addEventListener("input", function()
-{
-    console.log(diemCuoiKy.value);
+const nutTinhDiem = document.getElementById("nut_tinh_diem");
+const ketQuaDiem = document.getElementById("ket_qua_diem");
+
+nutTinhDiem.addEventListener("click", function () {
+    const diemQT = Number(diemQuaTrinh.value);
+    const diemGK = Number(diemGiuaKy.value);
+    const diemCK = Number(diemCuoiKy.value);
+
+    const diemTongKet = diemQT * 0.2
+                      + diemGK * 0.3
+                      + diemCK * 0.5;
+
+    ketQuaDiem.textContent =
+        "Điểm tổng kết: " + diemTongKet.toFixed(2);
 });
