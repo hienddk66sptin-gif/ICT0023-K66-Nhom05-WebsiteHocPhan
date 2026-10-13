@@ -4,160 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiết kế Web</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap');
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  font-family: 'Roboto', sans-serif;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
-    color: black;
-}
-.cac_hoc_phan_h2
-{
-    text-align:center;
-    margin: 20px auto;
-    color:black;
-}
-header {
-    background-color: #075e2f;
-    color: white;
-    padding: 20px 8%; /* tren duoi trai phai*/
-    z-index: 1000; /*mọi thứ trong header sẽ đè vào những thứ khác*/
-}
-header h1 {
-    margin-bottom: 15px;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 25px;
-}
-.dau_trang
-{
-    display:flex;
-    align-items:center;
-    gap:20px;
-}
-.logo_truong
-{
-    width:90px;
-    height:90px;
-    object-fit:contain;
-    border-radius:50px;
-}
-.noi_dung_hoc_phan 
-{ 
-    background-color: white; 
-    margin: 25px 8%; 
-    padding: 25px;
-     border: 1px solid #d5e8dc; 
-     border-radius: 12px;
-}
-
-.noi_dung_hoc_phan h3 {
-    color: #075e2f;
-    font-size: 23px;
-    margin-bottom: 20px; /*cách nội dung dưới 20px*/
-    padding-bottom: 12px;
-    border-bottom: 2px solid #d5e8dc; /*TẠO ĐƯỜNG Viền thôi, chỉ chiếm đúng khoảng cách của h3*/
-}
-.noi_dung_hoc_phan p 
-{ 
-    color: black; 
-    font-size: 16px; 
-    line-height: 1.6; 
-    margin-bottom: 12px;
- }
-.noi_dung_hoc_phan ul, .noi_dung_hoc_phan ol
-{ 
-     padding-left: 25px;
-     margin-bottom: 15px;
-}
-.noi_dung_hoc_phan li
-{ 
-     margin-bottom: 8px;
-     line-height: 1.6; /*Tăng khoảng cách giữa các dòng ở li*/
- }
- .noi_dung_hoc_phan h5
-{
-     color: black;
-     font-size: 15px;
-     margin-top: 10px; 
-     margin-bottom: 8px;
-     font-weight:600;
-}
-.noi_dung_hoc_phan h4 
-{ 
-      color: #356b4b; 
-      font-size: 18px; 
-      font-weight: 600;
-      margin-top: 22px;
-      margin-bottom: 10px; 
-}
-.nut_xem_thong_tin 
-{ 
-    display: inline-block; /*cho phần tử nằm chung dòng với pt khác, ở đâu nó chung với class tai_lieu*/
-    background-color: #075e2f; 
-    color: white;
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-size: 14px; 
-    font-weight: 500;
-    transition: 0.3s; 
-}
-.nut_xem_thong_tin:hover
-{
-    background-color: #0a8443; /* Màu xanh lá tươi hơn, sáng hơn */
-    transform: translateY(-3px); /* Nhích lên trên 3px */
-    box-shadow: 0 4px 12px rgba(7, 94, 47, 0.35); /* Đổ bóng cùng tông màu xanh giúp nút nổi bật hơn */
-}
-.tai_lieu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-
-    background-color: #f5faf6;
-    border: 1px solid #d5e8dc;
-    border-radius: 10px;
-
-    padding: 20px;
-    margin-top: 12px;
-
-    transition: 0.3s;
-}
-
-.tai_lieu:hover {
-    border-color: #075e2f;
-    background-color: #edf7f0;
-}
-
-    </style>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="tienganh.css">
 </head>
-
 <body>
     <header> 
         <div class="dau_trang">
              <img src="images/logo_TBU.png" class="logo_truong">
             <div>
                 <h1>Giới thiệu các khóa học dành cho sinh viên K66 ĐHSP Tin</h1>
-                 <nav>
-                    <a href="index.html">Trang chủ</a>
+                 <nav> <!--Vùng chứa các liên kết điều hướng chính ở menu-->
+                  <a href="trangchu.html">Trang chủ</a>
+                    <a href="index.html">Học phần</a>
+                    <a href="congcu.html">Công cụ</a>
+                    <a href="lienhe.html">Liên hệ</a>
+                    <a href="huongdanvahoidap">Hưỡng dẫn và hỏi đáp</a>
                  </nav>
             </div>
         </div>
     </header>
     <main>
-
     <section class="noi_dung_hoc_phan">
         <h3>GIỚI THIỆU CHI TIẾT VỀ HỌC PHẦN</h3>
         <h4>Mô tả tóm tắt học phần</h4>
@@ -171,7 +37,7 @@ nav a {
         <h5>Mục tiêu chung</h5>
         <ul>
            <li>Trang bị cho sinh viên kiến thức ngữ pháp, từ vựng và kỹ năng giao tiếp tiếng Anh đạt trình độ A2/B1</li>
-           <li>rang bị hiểu biết về văn hóa – xã hội của các nước nói tiếng Anh, tạo nền tảng kiến thức chung cho sinh viên phát triển khả năng thực hành ngôn ngữ; xây dựng thái độ học tập tích cực và phát huy ý thức học tập suốt đời.</li>
+           <li>Trang bị hiểu biết về văn hóa – xã hội của các nước nói tiếng Anh, tạo nền tảng kiến thức chung cho sinh viên phát triển khả năng thực hành ngôn ngữ; xây dựng thái độ học tập tích cực và phát huy ý thức học tập suốt đời.</li>
         </ul>
 
         <h5>Mục tiêu cụ thể</h5>
@@ -310,7 +176,30 @@ nav a {
     </div>
     <a href="giao trinh/ENG0003. Tiếng Anh 3  (13.01.25).docx" class="nut_xem_thong_tin" target="_blank">Tải xuống</a>
 </div>
+<div class="bai_tap">
+        <div class="thong_tin_bai_tap">
+            <h4>Bài tập 01: Nối các động từ từ A với 1 từ và từ B với 1 từ để hoàn thành đoạn hội thoại sau</h4>
+            <p>A: become / get / go / learn / save / share</p>
+            <p>B: a degree / a house / famous / money / to college / to drive</p>
+            <ol>
+                <li>My parents bought my sister a car. Now she has to__________.</li>
+                <li>Emily is a brilliant artist, but she doest't want to__________ or be on TV.</li>
+                <li>My brother and his best friend__________at university.</li>
+                <li>It's a good idea to___________if you want to buy a new laptop.</li>
+                <li>When i leave school i want to__________and study history and geography.</li>
+                <li>Ben's biggest dream is__________in foreign languages from a top university</li>
+            </ol>
+            <p><strong>Chủ đề:</strong>Unit 7: A bright future</p>
+            <p><strong>Hạn nộp:</strong> Chưa cập nhật</p>
+        </div>
+        <a href="baitaptienganh3.html" class="nut_xem_thong_tin">
+            Nộp bài tập
+        </a>
+    </div>
 </section>
 </main>
+ <footer>
+        <p>© 2026 - Website giới thiệu học phần, nhóm 5</p>
+    </footer>
 </body>
 </html>
