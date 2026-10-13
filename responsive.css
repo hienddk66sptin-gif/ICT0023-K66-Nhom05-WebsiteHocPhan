@@ -1,0 +1,80 @@
+
+/* Responsive cho phần đầu trang trên điện thoại */
+@media (max-width: 600px) {
+    header {
+        padding: 16px 5%;
+    }
+
+    .dau_trang {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .logo_truong {
+        width: 65px;
+        height: 65px;
+    }
+
+    header h1 {
+        font-size: 21px;
+        line-height: 1.4;
+        overflow-wrap: break-word;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav a {
+        margin-right: 0;
+        padding: 6px 0;
+    }
+}
+
+/* Máy tính bảng */
+@media (max-width: 900px) {
+    #hocphan .hoc_phan {
+        width: 45%;
+    }
+}
+
+/* Điện thoại */
+@media (max-width: 600px) {
+    #hocphan {
+        padding: 0 12px;
+        gap: 16px;
+    }
+
+    #hocphan .hoc_phan {
+        width: 100%;
+    }
+}
+.danh_sach_chuc_nang_cua_web {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    width: 30%;
+    min-height: 240px;
+    margin: 0 1%;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #d5e8dc;
+    border-radius: 10px;
+}
+
+.danh_sach_chuc_nang_cua_web a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #075e2f;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: auto;
+}
