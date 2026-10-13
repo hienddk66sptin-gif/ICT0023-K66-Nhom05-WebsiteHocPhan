@@ -21,10 +21,26 @@
     <section>
         <h2>Bài tập 01: Xây dựng trang HTML cơ bản</h2>
 
-        <p><strong>Học phần:</strong> Thiết kế Web</p>
-        <p><strong>Chủ đề:</strong> HTML cơ bản</p>
-        <p><strong>Tuần học:</strong> Tuần 2</p>
-        <p><strong>Hạn nộp:</strong> Chưa cập nhật</p>
+
+<p><strong>Học phần:</strong> Thiết kế Web</p>
+<p><strong>Chủ đề:</strong> HTML cơ bản</p>
+<p><strong>Tuần học:</strong> Tuần 2</p>
+
+<p>
+    <strong>Hạn nộp:</strong>
+    <time id="han_nop" datetime="2026-10-13T19:11:00">
+    13/10/2026 lúc 19:11
+</time>
+</p>
+
+<div id="khu_vuc_dem_nguoc" class="dem_nguoc">
+    <h3>⏳ Thời gian còn lại đến hạn nộp</h3>
+    <p id="thoi_gian_con_lai" role="status" aria-live="polite">
+        Đang chờ khởi tạo đồng hồ...
+    </p>
+</div>
+
+       
 
         <h3>1. Nội dung đề bài</h3>
         <p>
@@ -66,16 +82,23 @@
                     accept=".html,.css,.js,.zip,.rar,.pdf" required
                 ><!--cái input này chấp nhận html, css... zip,rar,pdf và nó yêu cầu phaie gửi-->
             </div> 
-            <p id="trang_thai_nop_bai" role="status"> <!--thêm role="status" để trình đọc màn hình có thể nhận biết khi trạng thái thay đổi. Phần hiển thị vẫn giữ nguyên.-->
-                Trạng thái: Chưa nộp bài.
+            <p id="trang_thai_nop_bai" role="status">
+                 Trạng thái: Chưa nộp bài.
             </p>
-            <button class="nut_nop_bai_o_cuoi" type="submit">Nộp bài</button> <!--type=submit cứ hiểu nôm na là gửi biểu mẫu chứa cái nội dung này đi. submit tiếng việt nghĩa là: Nộp -->
-        </form>
+
+            <div id="ket_qua_thoi_gian_nop" aria-live="polite">
+            <p>Thời điểm nộp: Chưa có.</p>
+            <p>Kết quả: Chưa nộp bài.</p>
+            </div>
+            <button class="nut_nop_bai_o_cuoi" type="submit">
+    Nộp bài
+</button>
     </section>
 </main>
     <footer>
         <p>© 2026 - Website giới thiệu học phần, nhóm 5</p>
     </footer>
     <script src="nopbaitap.js"> </script>
+    <script src="demnguoc.js"></script>
 </body>
 </html>
