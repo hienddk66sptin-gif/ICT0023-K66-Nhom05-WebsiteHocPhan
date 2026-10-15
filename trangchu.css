@@ -133,22 +133,3 @@
         margin-top: 12px;
     }
 }
-/* Hiệu ứng chuyển động mượt */
-.danh_sach_chuc_nang_cua_web {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-/* Thẻ chức năng nhích lên khi rê chuột */
-.danh_sach_chuc_nang_cua_web:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Nút chuyển sang màu đỏ khi rê chuột */
-.danh_sach_chuc_nang_cua_web a {
-    transition: background-color 0.25s ease;
-}
-
-.danh_sach_chuc_nang_cua_web a:hover {
-    background-color: red;
-}

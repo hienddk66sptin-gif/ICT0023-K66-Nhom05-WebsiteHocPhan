@@ -28,38 +28,11 @@ header {
 header h1 {
     margin-bottom: 15px;
 }
-
-
 nav a {
-    position: relative;
     color: white;
     text-decoration: none;
     margin-right: 25px;
-    padding-bottom: 8px;
 }
-
-/* Khi di chuột vào */
-nav a:hover::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: white;
-}
-
-/* Giữ thanh trắng ở mục đang chọn */
-nav a.active::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: white;
-}
-
 .dau_trang
 {
     display:flex;
@@ -119,32 +92,4 @@ footer
     text-align:center;
     margin-top:30px;
     justify-content:center;
-}
-
-.tim_kiem_hoc_phan {
-    text-align: center;
-    margin: 20px 0;
-}
-
-
-.tim_kiem_hoc_phan label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-
-.tim_kiem_hoc_phan input {
-    width: 80%;
-    max-width: 450px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-}
-
-.tim_kiem_hoc_phan input:focus {
-    border-color: #d65a86;
 }
