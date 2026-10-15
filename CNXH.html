@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Web</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: black;
+}
+.cac_hoc_phan_h2
+{
+    text-align:center;
+    margin: 20px auto;
+    color:black;
+}
+header {
+    background-color: #075e2f;
+    color: white;
+    padding: 20px 8%; /* tren duoi trai phai*/
+    z-index: 1000; /*mọi thứ trong header sẽ đè vào những thứ khác*/
+}
+header h1 {
+    margin-bottom: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+.dau_trang
+{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.logo_truong
+{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    border-radius:50px;
+}
+.noi_dung_hoc_phan 
+{ 
+    background-color: white; 
+    margin: 25px 8%; 
+    padding: 25px;
+     border: 1px solid #d5e8dc; 
+     border-radius: 12px;
+}
+
+.noi_dung_hoc_phan h3 {
+    color: #075e2f;
+    font-size: 23px;
+    margin-bottom: 20px; /*cách nội dung dưới 20px*/
+    padding-bottom: 12px;
+    border-bottom: 2px solid #d5e8dc; /*TẠO ĐƯỜNG Viền thôi, chỉ chiếm đúng khoảng cách của h3*/
+}
+.noi_dung_hoc_phan p 
+{ 
+    color: black; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin-bottom: 12px;
+ }
+.noi_dung_hoc_phan ul, .noi_dung_hoc_phan ol
+{ 
+     padding-left: 25px;
+     margin-bottom: 15px;
+}
+.noi_dung_hoc_phan li
+{ 
+     margin-bottom: 8px;
+     line-height: 1.6; /*Tăng khoảng cách giữa các dòng ở li*/
+ }
+ .noi_dung_hoc_phan h5
+{
+     color: black;
+     font-size: 15px;
+     margin-top: 10px; 
+     margin-bottom: 8px;
+     font-weight:600;
+}
+.noi_dung_hoc_phan h4 
+{ 
+      color: #356b4b; 
+      font-size: 18px; 
+      font-weight: 600;
+      margin-top: 22px;
+      margin-bottom: 10px; 
+}
+.nut_xem_thong_tin 
+{ 
+    display: inline-block; /*cho phần tử nằm chung dòng với pt khác, ở đâu nó chung với class tai_lieu*/
+    background-color: #075e2f; 
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px; 
+    font-weight: 500;
+    transition: 0.3s; 
+}
+.nut_xem_thong_tin:hover
+{
+    background-color: #0a8443; /* Màu xanh lá tươi hơn, sáng hơn */
+    transform: translateY(-3px); /* Nhích lên trên 3px */
+    box-shadow: 0 4px 12px rgba(7, 94, 47, 0.35); /* Đổ bóng cùng tông màu xanh giúp nút nổi bật hơn */
+}
+.tai_lieu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: #f5faf6;
+    border: 1px solid #d5e8dc;
+    border-radius: 10px;
+
+    padding: 20px;
+    margin-top: 12px;
+
+    transition: 0.3s;
+}
+
+.tai_lieu:hover {
+    border-color: #075e2f;
+    background-color: #edf7f0;
+}
+
+    </style>
+</head>
+
+<body>
+    <header> 
+        <div class="dau_trang">
+             <img src="images/logo_TBU.png" class="logo_truong">
+            <div>
+                <h1>Giới thiệu các khóa học dành cho sinh viên K66 ĐHSP Tin</h1>
+                 <nav>
+                    <a href="index.html">Trang chủ</a>
+                 </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+   <section class="noi_dung_hoc_phan">
+    <h3>GIỚI THIỆU CHI TIẾT VỀ HỌC PHẦN</h3>
+
+    <h4>Mô tả tóm tắt học phần</h4>
+
+    <p>
+        Chủ nghĩa xã hội khoa học là một trong ba bộ phận hợp thành
+        chủ nghĩa Mác - Lênin. Học phần cung cấp cho sinh viên những
+        nội dung cơ bản, cốt lõi về Chủ nghĩa xã hội khoa học và nghiên cứu
+        các quy luật, tính quy luật chính trị - xã hội của quá trình đi lên
+        chủ nghĩa xã hội ở Việt Nam.
+    </p>
+
+    <p class="ghi_chu">
+        Học phần thuộc khối kiến thức giáo dục đại cương và là học phần
+        bắt buộc. Sinh viên được trang bị cơ sở lý luận và phương pháp luận
+        để nhận thức về quá trình thực hiện cách mạng xã hội chủ nghĩa
+        ở Việt Nam.
+    </p>
+
+
+    <h4>Mục tiêu học phần</h4>
+
+    <h5>Mục tiêu chung</h5>
+
+    <ul>
+        <li>
+            Trang bị cho sinh viên một cách có hệ thống những kiến thức cơ bản
+            về Chủ nghĩa xã hội khoa học.
+        </li>
+
+        <li>
+            Giúp sinh viên có cơ sở lý luận và phương pháp luận đúng đắn
+            để nhận thức đầy đủ hơn về quá trình thực hiện cách mạng
+            xã hội chủ nghĩa ở Việt Nam.
+        </li>
+    </ul>
+
+
+    <h5>Mục tiêu cụ thể</h5>
+
+    <ul class="danh_sach_muc_tieu">
+        <li>
+            Mục tiêu 1: Có kiến thức cơ bản về quá trình ra đời,
+            phát triển của Chủ nghĩa xã hội khoa học.
+        </li>
+
+        <li>
+            Mục tiêu 2: Có kiến thức cơ bản, cốt lõi về Chủ nghĩa xã hội khoa học,
+            một trong ba bộ phận hợp thành chủ nghĩa Mác - Lênin.
+        </li>
+
+        <li>
+            Mục tiêu 3: Có năng lực hiểu biết thực tiễn, vận dụng tri thức
+            Chủ nghĩa xã hội khoa học vào xem xét, đánh giá những vấn đề
+            chính trị - xã hội của đất nước liên quan đến chủ nghĩa xã hội
+            và con đường đi lên chủ nghĩa xã hội ở Việt Nam.
+        </li>
+
+        <li>
+            Mục tiêu 4: Có niềm tin vào sự lãnh đạo của Đảng Cộng sản Việt Nam
+            và thắng lợi của sự nghiệp đổi mới đất nước.
+        </li>
+    </ul>
+
+
+    <h4>Chuẩn đầu ra của học phần</h4>
+
+    <ul class="danh_sach_chuan_dau_ra">
+        <li>
+            Chuẩn đầu ra 1: Nêu được quá trình ra đời, phát triển của
+            Chủ nghĩa xã hội khoa học; đối tượng và phương pháp nghiên cứu
+            Chủ nghĩa xã hội khoa học.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 2: Phân tích được quan điểm của chủ nghĩa Mác - Lênin
+            về sứ mệnh lịch sử của giai cấp công nhân; về chủ nghĩa xã hội,
+            thời kỳ quá độ và liên hệ sự vận dụng của Đảng trong thực tiễn
+            cách mạng Việt Nam.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 3: Phân tích được quan điểm của chủ nghĩa Mác - Lênin
+            về vấn đề dân chủ và nhà nước xã hội chủ nghĩa; về vấn đề dân tộc,
+            tôn giáo trong thời kỳ quá độ và quan điểm, chủ trương, chính sách
+            của Đảng, Nhà nước ta trong việc giải quyết những vấn đề này
+            ở Việt Nam.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 4: Phân tích được quan điểm của chủ nghĩa Mác - Lênin
+            về liên minh giai cấp, tầng lớp; về vấn đề gia đình trong thời kỳ
+            quá độ lên chủ nghĩa xã hội; liên hệ sự vận dụng của Đảng
+            trong thực tiễn cách mạng Việt Nam.
+        </li>
+
+        <li>
+            Chuẩn đầu ra 5: Vận dụng được lý luận Chủ nghĩa xã hội khoa học
+            vào phân tích, đánh giá những vấn đề chính trị - xã hội
+            trong thực tiễn xây dựng, đổi mới và phát triển đất nước.
+        </li>
+    </ul>
+</section>
+<section class="noi_dung_hoc_phan">
+    <h3>NỘI DUNG HỌC TẬP</h3>
+
+    <h4>Chương 1: Nhập môn Chủ nghĩa xã hội khoa học</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Sự ra đời của Chủ nghĩa xã hội khoa học.</li>
+        <li>Các giai đoạn phát triển của Chủ nghĩa xã hội khoa học.</li>
+        <li>Đối tượng, phương pháp, phạm vi và ý nghĩa của việc nghiên cứu Chủ nghĩa xã hội khoa học.</li>
+    </ul>
+
+
+    <h4>Chương 2: Sứ mệnh lịch sử của giai cấp công nhân</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Quan điểm cơ bản của chủ nghĩa Mác - Lênin về giai cấp công nhân.</li>
+        <li>Sứ mệnh lịch sử thế giới của giai cấp công nhân.</li>
+        <li>Giai cấp công nhân và việc thực hiện sứ mệnh lịch sử hiện nay.</li>
+        <li>Sứ mệnh lịch sử của giai cấp công nhân Việt Nam.</li>
+    </ul>
+
+
+    <h4>Chương 3: Chủ nghĩa xã hội và thời kỳ quá độ lên chủ nghĩa xã hội</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Điều kiện ra đời chủ nghĩa xã hội.</li>
+        <li>Thời kỳ quá độ lên chủ nghĩa xã hội.</li>
+        <li>Quá độ lên chủ nghĩa xã hội ở Việt Nam.</li>
+    </ul>
+
+
+    <h4>Chương 4: Dân chủ xã hội chủ nghĩa và Nhà nước xã hội chủ nghĩa</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Dân chủ và dân chủ xã hội chủ nghĩa.</li>
+        <li>Nhà nước xã hội chủ nghĩa.</li>
+        <li>Dân chủ xã hội chủ nghĩa và nhà nước pháp quyền xã hội chủ nghĩa ở Việt Nam.</li>
+    </ul>
+
+
+    <h4>Chương 5: Cơ cấu xã hội - giai cấp và liên minh giai cấp, tầng lớp trong thời kỳ quá độ lên chủ nghĩa xã hội</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Cơ cấu xã hội - giai cấp trong thời kỳ quá độ lên chủ nghĩa xã hội.</li>
+        <li>Liên minh giai cấp, tầng lớp trong thời kỳ quá độ lên chủ nghĩa xã hội.</li>
+        <li>Cơ cấu xã hội - giai cấp và liên minh giai cấp, tầng lớp ở Việt Nam.</li>
+    </ul>
+
+
+    <h4>Chương 6: Vấn đề dân tộc và tôn giáo trong thời kỳ quá độ lên chủ nghĩa xã hội</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Dân tộc trong thời kỳ quá độ lên chủ nghĩa xã hội.</li>
+        <li>Tôn giáo trong thời kỳ quá độ lên chủ nghĩa xã hội.</li>
+        <li>Quan hệ dân tộc và tôn giáo ở Việt Nam.</li>
+    </ul>
+
+
+    <h4>Chương 7: Vấn đề gia đình trong thời kỳ quá độ lên chủ nghĩa xã hội</h4>
+    <ul class="gioi_thieu_so_qua_unit">
+        <li>Khái niệm, vị trí và chức năng của gia đình.</li>
+        <li>Cơ sở xây dựng gia đình trong thời kỳ quá độ lên chủ nghĩa xã hội.</li>
+        <li>Xây dựng gia đình Việt Nam trong thời kỳ quá độ lên chủ nghĩa xã hội.</li>
+    </ul>
+</section>
+<section class="noi_dung_hoc_phan">
+    <h3>KẾ HOẠCH HỌC TẬP</h3>
+
+    <h4>Phân bổ thời gian</h4>
+
+    <p>
+        Học phần Chủ nghĩa xã hội khoa học có tổng thời lượng 100 tiết,
+        được phân bổ giữa học lý thuyết, bài tập, thảo luận - thực hành,
+        tự học và kiểm tra đánh giá.
+    </p>
+
+    <ul>
+        <li>
+            <strong>Lý thuyết:</strong> 21 tiết
+        </li>
+
+        <li>
+            <strong>Bài tập:</strong> 7 tiết
+        </li>
+
+        <li>
+            <strong>Thảo luận - Thực hành:</strong> 4 tiết
+        </li>
+
+        <li>
+            <strong>Tự học:</strong> 66 tiết
+        </li>
+
+        <li>
+            <strong>Kiểm tra, đánh giá:</strong> 2 tiết
+        </li>
+    </ul>
+
+
+    <h4>Trình tự học tập</h4>
+
+    <ol>
+        <li>
+            <strong>Chương 1:</strong>
+            Tìm hiểu sự ra đời, các giai đoạn phát triển,
+            đối tượng, phương pháp và ý nghĩa nghiên cứu
+            Chủ nghĩa xã hội khoa học.
+        </li>
+
+        <li>
+            <strong>Chương 2:</strong>
+            Tìm hiểu sứ mệnh lịch sử của giai cấp công nhân,
+            quan điểm của chủ nghĩa Mác - Lênin và việc thực hiện
+            sứ mệnh lịch sử của giai cấp công nhân Việt Nam.
+        </li>
+
+        <li>
+            <strong>Chương 3:</strong>
+            Tìm hiểu về chủ nghĩa xã hội, thời kỳ quá độ
+            và con đường quá độ lên chủ nghĩa xã hội ở Việt Nam.
+        </li>
+
+        <li>
+            <strong>Kiểm tra giữa kỳ:</strong>
+            Thực hiện bài kiểm tra giữa kỳ theo yêu cầu
+            của giảng viên.
+        </li>
+
+        <li>
+            <strong>Chương 4:</strong>
+            Tìm hiểu về dân chủ xã hội chủ nghĩa,
+            nhà nước xã hội chủ nghĩa và nhà nước pháp quyền
+            xã hội chủ nghĩa ở Việt Nam.
+        </li>
+
+        <li>
+            <strong>Chương 5:</strong>
+            Tìm hiểu cơ cấu xã hội - giai cấp và liên minh
+            giai cấp, tầng lớp trong thời kỳ quá độ lên
+            chủ nghĩa xã hội.
+        </li>
+
+        <li>
+            <strong>Chương 6:</strong>
+            Tìm hiểu vấn đề dân tộc, tôn giáo và quan hệ
+            dân tộc, tôn giáo ở Việt Nam trong thời kỳ quá độ
+            lên chủ nghĩa xã hội.
+        </li>
+
+        <li>
+            <strong>Chương 7:</strong>
+            Tìm hiểu vấn đề gia đình, vị trí, chức năng của gia đình
+            và việc xây dựng gia đình Việt Nam trong thời kỳ quá độ
+            lên chủ nghĩa xã hội.
+        </li>
+
+        <li>
+            <strong>Ôn tập và kiểm tra cuối kỳ:</strong>
+            Ôn tập các nội dung của học phần và thực hiện
+            kiểm tra kết thúc học phần.
+        </li>
+    </ol>
+</section>
+<section class="noi_dung_hoc_phan"> 
+    <h3>TÀI LIỆU HỌC TẬP</h3>
+
+    <p class="mo_ta_tai_lieu">
+        Tổng hợp giáo trình chính, tài liệu tham khảo và các website
+        phục vụ quá trình học tập môn Chủ nghĩa xã hội khoa học.
+    </p>
+
+
+    <h4>Giáo trình chính</h4>
+
+    <div class="tai_lieu">
+        <div class="thong_tin_tai_lieu">
+            <h5>Giáo trình Chủ nghĩa xã hội khoa học</h5>
+
+            <p>
+                Dành cho bậc đại học hệ không chuyên lý luận chính trị.
+            </p>
+            <p>Nhà xuất bản Chính trị Quốc gia Sự thật, Hà Nội.</p>
+        </div>
+
+        <a href="giao trinh/MLN131 - Giao trinh CNXHKH.pdf" class="nut_xem_thong_tin">Mở tài liệu</a>
+    </div>
+    <h4>Website học tập</h4>
+    <div class="tai_lieu">
+        <div class="thong_tin_tai_lieu">
+            <h5>Tạp chí Cộng sản</h5>
+
+            <p>
+                Các bài nghiên cứu, thông tin lý luận,
+                sự kiện và bình luận phục vụ việc tham khảo.
+            </p>
+        </div>
+
+        <a href="https://www.tapchicongsan.org.vn/"
+           class="nut_xem_thong_tin"
+           target="_blank">
+            Truy cập
+        </a>
+    </div>
+
+
+    <div class="tai_lieu">
+        <div class="thong_tin_tai_lieu">
+            <h5>Tạp chí Lý luận chính trị</h5>
+
+            <p>
+                Các bài nghiên cứu chuyên sâu về lý luận chính trị
+                theo nhiều chủ đề.
+            </p>
+        </div>
+
+        <a href="http://lyluanchinhtri.vn/"
+           class="nut_xem_thong_tin"
+           target="_blank">
+            Truy cập
+        </a>
+    </div>
+
+
+    <div class="tai_lieu">
+        <div class="thong_tin_tai_lieu">
+            <h5>Tạp chí Khoa học xã hội Việt Nam</h5>
+
+            <p>
+                Các bài nghiên cứu chuyên sâu theo chủ đề
+                phục vụ quá trình học tập và tham khảo.
+            </p>
+        </div>
+
+        <a href="http://tapchikhxh.vass.gov.vn/"
+           class="nut_xem_thong_tin"
+           target="_blank">
+            Truy cập
+        </a>
+    </div>
+</section>
+</main>
+</body>
+</html>

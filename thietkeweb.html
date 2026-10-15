@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế Web</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: black;
+}
+.cac_hoc_phan_h2
+{
+    text-align:center;
+    margin: 20px auto;
+    color:black;
+}
+header {
+    background-color: #075e2f;
+    color: white;
+    padding: 20px 8%; /* tren duoi trai phai*/
+    z-index: 1000; /*mọi thứ trong header sẽ đè vào những thứ khác*/
+}
+header h1 {
+    margin-bottom: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+}
+.dau_trang
+{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.logo_truong
+{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    border-radius:50px;
+}
+.noi_dung_hoc_phan 
+{ 
+    background-color: white; 
+    margin: 25px 8%; 
+    padding: 25px;
+     border: 1px solid #d5e8dc; 
+     border-radius: 12px;
+}
+
+.noi_dung_hoc_phan h3 {
+    color: #075e2f;
+    font-size: 23px;
+    margin-bottom: 20px; /*cách nội dung dưới 20px*/
+    padding-bottom: 12px;
+    border-bottom: 2px solid #d5e8dc; /*TẠO ĐƯỜNG Viền thôi, chỉ chiếm đúng khoảng cách của h3*/
+}
+.noi_dung_hoc_phan p 
+{ 
+    color: black; 
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin-bottom: 12px;
+ }
+.noi_dung_hoc_phan ul, .noi_dung_hoc_phan ol
+{ 
+     padding-left: 25px;
+     margin-bottom: 15px;
+}
+.noi_dung_hoc_phan li
+{ 
+     margin-bottom: 8px;
+     line-height: 1.6; /*Tăng khoảng cách giữa các dòng ở li*/
+ }
+ .noi_dung_hoc_phan h5
+{
+     color: black;
+     font-size: 15px;
+     margin-top: 10px; 
+     margin-bottom: 8px;
+     font-weight:600;
+}
+.noi_dung_hoc_phan h4 
+{ 
+      color: #356b4b; 
+      font-size: 18px; 
+      font-weight: 600;
+      margin-top: 22px;
+      margin-bottom: 10px; 
+}
+.nut_xem_thong_tin 
+{ 
+    display: inline-block; /*cho phần tử nằm chung dòng với pt khác, ở đâu nó chung với class tai_lieu*/
+    background-color: #075e2f; 
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px; 
+    font-weight: 500;
+    transition: 0.3s; 
+}
+.nut_xem_thong_tin:hover
+{
+    background-color: #0a8443; /* Màu xanh lá tươi hơn, sáng hơn */
+    transform: translateY(-3px); /* Nhích lên trên 3px */
+    box-shadow: 0 4px 12px rgba(7, 94, 47, 0.35); /* Đổ bóng cùng tông màu xanh giúp nút nổi bật hơn */
+}
+.tai_lieu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: #f5faf6;
+    border: 1px solid #d5e8dc;
+    border-radius: 10px;
+
+    padding: 20px;
+    margin-top: 12px;
+
+    transition: 0.3s;
+}
+
+.tai_lieu:hover {
+    border-color: #075e2f;
+    background-color: #edf7f0;
+}
+
+    </style>
+</head>
+
+<body>
+    <header> 
+        <div class="dau_trang">
+             <img src="images/logo_TBU.png" class="logo_truong">
+            <div>
+                <h1>Giới thiệu các khóa học dành cho sinh viên K66 ĐHSP Tin</h1>
+                 <nav>
+                    <a href="index.html">Trang chủ</a>
+                 </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    <section class="noi_dung_hoc_phan">
+        <h3>GIỚI THIỆU CHI TIẾT VỀ HỌC PHẦN</h3>
+        <h4>Mô tả tóm tắt học phần</h4>
+        <p>
+           Thiết kế Web là học phần giúp sinh viên làm quen với những kiến thức và kỹ năng cơ bản để xây dựng một website. Trong học phần, sinh viên được tìm hiểu về HTML/HTML5, CSS/CSS3, JavaScript và một số công cụ, framework phổ biến trong  thiết kế web.
+        </p>
+        <p class="ghi_chu">
+            Đây là học phần bắt buộc, tất cả các sinh viên ngành Công nghệ thông tin/ĐHSP Tin phải học.
+        </p>
+
+        <h4>Mục tiêu học phần</h4>
+        <h5>Mục tiêu chung</h5>
+        <ul>
+            <li>Trang bị cho sinh viên những kiến thức cơ bản về thiết kế web, đồng thời rèn luyện kỹ năng trình bày và làm việc nhóm.</li>
+
+            <li>Giúp sinh viên biết sử dụng HTML/HTML5, CSS/CSS3 và JavaScript để xây dựng và định dạng trang web.</li>
+
+            <li>Giúp sinh viên có khả năng vận dụng kiến thức và kỹ năng đã học vào học tập, công việc và các hoạt động tin học.</li>
+        </ul>
+
+        <h5>Mục tiêu cụ thể</h5>
+            <ul class="danh_sach_muc_tieu">
+                <li>Mục tiêu 1: Nắm được những thao tác cơ bản để thiết kế Web.</li>
+                <li>Mục tiêu 2: Biết viết mã HTML và sử dụng các thẻ HTML cơ bản.</li>
+                <li>Mục tiêu 3: Biết sử dụng CSS/CSS3, JavaScript và một số công cụ hỗ trợ thiết kế Web.</li>
+                <li>Mục tiêu 4: Có khả năng thiết kế và xây dựng một trang Web cụ thể.</li>
+                <li>Mục tiêu 5: Rèn luyện kỹ năng tự học, đọc tài liệu, thảo luận và làm việc nhóm.</li>
+            </ul>
+
+            <h4>Chuẩn đầu ra của học phần</h4>
+            <ul class="danh_sach_chuan_dau_ra">
+                <li>Chuẩn đầu ra 1: Sử dụng được các công cụ và phần mềm phục vụ thiết kế Web.</li>
+                <li>Chuẩn đầu ra 2: Hiểu và sử dụng được các thẻ HTML để xây dựng nội dung trang Web.</li>
+                <li>Chuẩn đầu ra 3: Sử dụng CSS/CSS3 để định dạng và trình bày giao diện trang Web.</li>
+                <li>Chuẩn đầu ra 4: Vận dụng JavaScript và các công cụ liên quan để xây dựng trang Web có tính tương tác.</li>
+                <li>Chuẩn đầu ra 5: Có khả năng tự học, trao đổi kiến thức và phối hợp làm việc nhóm.</li>
+            </ul>
+    </section>
+
+<section class="noi_dung_hoc_phan">
+    <h3>NỘI DUNG HỌC TẬP</h3>
+    <h4>Chương 1: Tổng quan về thiết kế Web</h4>
+    <p>Giới thiệu khái niệm website, sự phát triển của công nghệ Web và các công cụ hỗ trợ thiết kế Web.</p>
+    <h4>Chương 2: Ngôn ngữ HTML/HTML5</h4>
+    <p>Tìm hiểu cấu trúc trang HTML, các thẻ và thuộc tính, cách trình bày văn bản, liên kết, hình ảnh, bảng, danh sách và biểu mẫu.</p>
+    <h4>Chương 3: Ngôn ngữ CSS/CSS3</h4>
+    <p>Tìm hiểu cú pháp CSS, cách áp dụng CSS và các thuộc tính định dạng giao diện, màu sắc, đường viền, khoảng cách và bố cục trang Web.</p>
+    <h4>Chương 4: JavaScript</h4>
+    <p>Làm quen với cú pháp JavaScript, biến, điều kiện, vòng lặp, hàm, mảng, đối tượng và cách tạo tương tác cho trang Web.</p>
+    <h4>Chương 5: Bootstrap</h4>
+    <p>Tìm hiểu Bootstrap và cách sử dụng các thành phần có sẵn để hỗ trợ xây dựng giao diện Web.</p>
+    <h4>Chương 6: jQuery</h4>
+    <p>Làm quen với jQuery và cách sử dụng thư viện này để thao tác với nội dung trang Web và xử lý sự kiện.</p>
+</section>
+
+<section class="noi_dung_hoc_phan">
+    <h3>KẾ HOẠCH HỌC TẬP</h3>
+
+    <h4>Phân bổ thời gian</h4>
+    <p>Học phần Thiết kế Web có tổng thời lượng 150 giờ, tương đương 3 tín chỉ.</p>
+
+    <ul>
+        <li>Lý thuyết: Tìm hiểu kiến thức nền tảng về thiết kế Web và các công nghệ liên quan.</li>
+        <li>Thực hành: Luyện tập viết mã HTML, định dạng giao diện bằng CSS và xây dựng tương tác bằng JavaScript.</li>
+        <li>Tự học: Đọc tài liệu, hoàn thành bài tập và củng cố kiến thức đã học.</li>
+    </ul>
+
+    <h4>Trình tự học tập</h4>
+    <ol>
+        <li>Tìm hiểu tổng quan về thiết kế Web.</li>
+        <li>Học HTML/HTML5 và xây dựng cấu trúc trang Web.</li>
+        <li>Học CSS/CSS3 và hoàn thiện giao diện.</li>
+        <li>Học JavaScript và bổ sung các chức năng tương tác.</li>
+        <li>Tìm hiểu Bootstrap, jQuery và vận dụng vào bài tập.</li>
+        <li>Hoàn thiện sản phẩm website và tự đánh giá kết quả học tập.</li>
+    </ol>
+</section>
+<section class="noi_dung_hoc_phan"> 
+    <h3>TÀI LIỆU HỌC TẬP</h3>
+    <p class="mo_ta_tai_lieu">
+        Tổng hợp giáo trình và tài liệu tham khảo phục vụ
+        quá trình học tập, thực hành môn Thiết kế Web.
+    </p>
+    
+<h4>Giáo trình chính</h4>
+
+<div class="tai_lieu">
+    <div class="thong_tin_tai_lieu">
+        <h5>Giáo trình Thiết kế Web</h5>
+        <p>
+            Giáo trình nội bộ Trường Đại học Tây Bắc,
+            phục vụ việc học tập và nghiên cứu học phần.
+        </p>
+        <p>
+        Tác giả: Nguyễn Duy Hiếu, Đặng Thị Vân Chi, Phạm Đình Phong
+    </p>
+    </div>
+    <a href="giao trinh/giao_trinh_thiet_ke_web.pdf" class="nut_xem_thong_tin">Mở tài liệu</a>
+</div>
+
+<h4>Tài liệu tham khảo</h4>
+
+<div class="tai_lieu">
+    <div class="thong_tin_tai_lieu">
+        <h5>Tự học thiết kế trang web bằng HTML</h5>
+        <p>Tác giả: Đậu Quang Tuấn</p>
+    </div>
+    <a href="giao trinh/Dau Quang Tuan - Thiet ke tran web voi HTML.pdf" class="nut_xem_thong_tin">Mở tài liệu</a>
+</div>
+<h4>Website học tập</h4>
+
+<div class="tai_lieu">
+    <div class="thong_tin_tai_lieu">
+        <h5>W3Schools</h5>
+        <p>
+            Website hướng dẫn HTML, CSS và JavaScript
+            thông qua các bài học và ví dụ thực hành.
+        </p>
+    </div>
+    <a href="https://www.w3schools.com/"
+       class="nut_xem_thong_tin"
+       target="_blank">Truy cập</a>    <!--target= blank là mở liên kết trong 1 tab mới của trình duyệt-->
+</div>
+
+<div class="tai_lieu">
+    <div class="thong_tin_tai_lieu">
+        <h5>Bootstrap</h5>
+        <p>
+            Tài liệu chính thức về Bootstrap,
+            hỗ trợ xây dựng giao diện website.
+        </p>
+    </div>
+    <a href="https://getbootstrap.com/"
+       class="nut_xem_thong_tin"
+       target="_blank">Truy cập</a>
+</div>
+</section>
+</main>
+</body>
+</html>
