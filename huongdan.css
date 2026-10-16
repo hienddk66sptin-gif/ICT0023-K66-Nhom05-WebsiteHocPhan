@@ -1,0 +1,293 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #075e2f;
+    color: white;
+    padding: 20px 8%;
+}
+
+.dau_trang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo_truong {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 15px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.2s ease;
+}
+
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a:focus,
+header nav a:active,
+header nav a:focus-visible,
+header nav a.active,
+header nav a[aria-current="page"] {
+    color: white !important;
+    background-color: transparent !important;
+    text-decoration: none;
+}
+
+main.container {
+    max-width: 1100px;
+    min-height: 60vh;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+main section > h2 {
+    color: #075e2f;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+main section > p {
+    color: #555;
+}
+
+main section.text-center:first-child {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #d5e8dc;
+    box-shadow: 0 8px 22px rgba(0, 70, 35, 0.10);
+    transform: translateY(0);
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease,
+                border-color 0.35s ease;
+}
+
+main section.text-center:first-child:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 70, 35, 0.18);
+    border-color: #075e2f;
+}
+
+main section.text-center:first-child h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+main section.text-center:first-child p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+main section.text-center:first-child p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #d5e8dc !important;
+    border-radius: 12px !important;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 70, 35, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(0, 70, 35, 0.12);
+}
+
+.card-body {
+    padding: 24px !important;
+}
+
+.card-title {
+    color: #075e2f;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-text {
+    color: #555;
+    margin-bottom: 0;
+}
+
+#tu-khoa-faq {
+    min-height: 46px;
+    border: 1px solid #b9cfc0;
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+#tu-khoa-faq:focus {
+    border-color: #075e2f;
+    box-shadow: 0 0 0 3px rgba(7, 94, 47, 0.15);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.accordion {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border: 1px solid #d5e8dc !important;
+    background-color: white;
+}
+
+.accordion-button {
+    color: #075e2f;
+    background-color: white;
+    font-weight: 600;
+    padding: 18px 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #075e2f;
+    background-color: #e8f4ec;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: #075e2f;
+    box-shadow: 0 0 0 3px rgba(7, 94, 47, 0.12);
+}
+
+.accordion-body {
+    color: #444;
+    line-height: 1.8;
+    background-color: white;
+}
+
+#form-hoi-dap {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #d5e8dc;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 70, 35, 0.06);
+}
+
+#form-hoi-dap .form-control,
+#form-hoi-dap .form-select {
+    min-height: 44px;
+    border: 1px solid #cbd5ce;
+    border-radius: 7px;
+    padding: 10px 12px;
+}
+
+#form-hoi-dap textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#form-hoi-dap .form-control:focus,
+#form-hoi-dap .form-select:focus {
+    border-color: #075e2f;
+    box-shadow: 0 0 0 3px rgba(7, 94, 47, 0.12);
+}
+
+#form-hoi-dap .btn-success {
+    background-color: #075e2f;
+    border-color: #075e2f;
+    transition: background-color 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+#form-hoi-dap .btn-success:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transform: translateY(-4px);
+    box-shadow: 0 7px 16px rgba(220, 53, 69, 0.35);
+}
+
+#form-hoi-dap .btn:focus-visible {
+    outline: 3px solid #80c99b;
+    outline-offset: 3px;
+}
+
+#trang-thai-form {
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #075e2f;
+    color: white;
+    text-align: center;
+    padding: 18px 12px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    .card {
+        transition: none;
+    }
+    .card:hover {
+        transform: none;
+    }
+}
+
+

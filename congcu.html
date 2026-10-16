@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công cụ học tập K66</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="congcu.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="dau_trang">
+            <img src="images/logo_TBU.png" class="logo_truong"
+                 alt="Logo Trường Đại học Tây Bắc">
+
+            <div>
+                <h1>Công cụ hỗ trợ học tập K66</h1>
+
+                <nav>
+                <a href="./trangchu.html">Trang chủ</a>
+                <a href="./index.html">Học phần</a>
+                <a href="./congcu.html">Công cụ</a>
+                <a href="./lienhe.html">Liên hệ</a>
+                <a href="./huongdanvahoidap.html">Hướng dẫn và hỏi đáp</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="cong_cu_tinh_diem">
+    <h2>Tính điểm học phần</h2>
+
+    <p>Chọn học phần:</p>
+    <select id="hoc_phan"> <!-- select là Tạo ra 1 danh sách lựa chọn, vd trên website sẽ xuất hiện 1 ô có thể bấm vào để chọn học phần-->
+        <option value="thiet_ke_web">Thiết kế Web</option> <!-- option Là 1 lựa chọn bên trong ds-->
+          <option value="tieng_anh_3">Tiếng anh 3</option>
+         <option value="ly_luan_day_hoc_tin_hoc">Lí luận dạy học tin học</option>
+         <option value="cpp">Ngôn ngữ lập trình bậc cao C++</option>
+         <option value="cau_truc_du_lieu">Cấu trúc dữ liệu và giải thuật</option>
+         <option value="chu_nghia_xa_hoi_khoa_hoc">Chủ nghĩa xã hội khoa học</option>
+    </select> <!--id và value, trung dó id đặt tên định danh cho danh sách để js có thể tìm thấy nó, còn value quy định giá trị đại diện cho lựa chộn thiết kế web, sau này javascript có thể đọc giá trị này để biết người dùng đã chọn học phần nào-->
+
+    <div>
+        <label for="diem_qua_trinh">Điểm quá trình (20%):</label>
+        <input type="number" id="diem_qua_trinh" min="0" max="10" step="0.1"> <!--giới hạn điểm nhập từ 10 tới 10, mỗi bước tăng hoặc giảm là 0.1 điểm--> 
+    </div>
+
+    <div>
+        <label for="diem_giua_ky">Điểm giữa kỳ (30%):</label>
+        <input type="number" id="diem_giua_ky" min="0" max="10" step="0.1">
+    </div>
+
+    <div>
+        <label for="diem_cuoi_ky">Điểm cuối kỳ (50%):</label>
+        <input type="number" id="diem_cuoi_ky" min="0" max="10" step="0.1">
+    </div>
+
+    <button id="nut_tinh_diem">Tính điểm</button>
+
+    <p id="ket_qua_diem">Điểm tổng kết sẽ hiển thị tại đây.</p>
+</section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Website giới thiệu học phần, Nhóm 5</p>
+    </footer>
+<script src="congcu.js"></script>
+</body>
+</html>
