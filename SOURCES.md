@@ -91,7 +91,7 @@ Ngày 12 tháng 10 năm 2026
 
 ## Giao diện chung (chân trang, hiệu ứng menu và thẻ)
 
-1. Công cụ: điền, hoặc “Tự thực hiện”
+1. Công cụ: Chat GPT
 - Ngày sử dụng: 15/10/2026
 - Prompt chính: tôi muốn sửa lại ( khi di chuột và ấn vào hướng dẫn và hỏi đáp có hiện màu xanh nhạt ) khi di chuột và ấn vào hỏi đáp kia không con hiện màu xanh nữa; tôi muốn chữ gửi liên hệ khi di chuột vào có hiệu ứng nổi lên màu đỏ, tôi muốn phần khung ( trung tâm hướng dẫn học tập có hiệu ứng nổi lên) chỉnh sửa phần code.
 - Phần tiếp nhận: footer.css`; gạch chân menu (`nav a:hover::after`, `nav a.active::after`) trong `styles.css`; hiệu ứng nhích lên và đổi màu nút trong `trangchu.css`.
