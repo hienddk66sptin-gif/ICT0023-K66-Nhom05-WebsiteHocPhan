@@ -79,7 +79,7 @@ Phần tiếp nhận: Lấy cấu trúc CSS, tạo responsive.css và liên kế
 - Cách kiểm chứng: Mở bằng Chrome, thu/phóng cửa sổ trình duyệt để kiểm tra giao diện.
   
 Trang hướng dẫn và hỏi đáp
-- Công cụ: Chat GBT
+- Công cụ: Chat GPT
 - Ngày sử dụng: 15/10/2026
 - Prompt chính: bạn nhìn vào file bài hiện tại của tôi và yêu cầu này. Trước tôi đã nhờ bạn hỗ trợ nên chắc bạn còn nhớ yêu cầu, và đây là file mới. Hiện tại tôi muốn làm mục hưỡng dẫn và hỏi đáp nhưng không biết làm thế nào. Nội dung cũng không biết soạn nên bạn hãy chỉ tôi từng bước 1 để làm, khi có xác nhận của tôi là xong 1 bước thì mới sang bước tiếp theo, nhớ là thiết kế giao diện cho phù hợp với giao diện chung của web.
 Phần tiếp nhận: huongdanvahoidap.html, huongdan.css, huongdan.js (tạo danh sách câu hỏi bằng jQuery, tìm kiếm câu hỏi, kiểm tra biểu mẫu phản hồi), cách dùng accordion của Bootstrap 5.
@@ -87,7 +87,7 @@ Phần tiếp nhận: huongdanvahoidap.html, huongdan.css, huongdan.js (tạo da
 - Cách kiểm chứng:Gõ từ khóa vào ô tìm kiếm, mở/đóng từng câu hỏi, gửi biểu mẫu khi để trống và khi điền đủ.
 
 Giao diện chung (chân trang, hiệu ứng menu và thẻ)
-- Công cụ: Chat GBT, Claude.
+- Công cụ: Chat GPT, Claude.
 - Ngày sử dụng: 15/10/2026
 - Prompt chính: tôi muốn sửa lại ( khi di chuột và ấn vào hướng dẫn và hỏi đáp có hiện màu xanh nhạt ) khi di chuột và ấn vào hỏi đáp kia không con hiện màu xanh nữa; tôi muốn chữ gửi liên hệ khi di chuột vào có hiệu ứng nổi lên màu đỏ, tôi muốn phần khung ( trung tâm hướng dẫn học tập có hiệu ứng nổi lên) chỉnh sửa phần code.
 - Phần tiếp nhận: footer.css; gạch chân menu (nav a:hover::after, nav a.active::after) trong styles.css; hiệu ứng nhích lên và đổi màu nút trong trangchu.css`.
