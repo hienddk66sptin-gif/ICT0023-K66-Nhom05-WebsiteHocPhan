@@ -189,3 +189,35 @@
     border-color: #075e2f;
     box-shadow: 0 0 0 3px rgba(7, 94, 47, 0.12);
 }
+
+#nut_du_lieu_mau,
+#nut_dat_lai {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px 5px 8px 0;
+    transition: background-color 0.2s;
+}
+#nut_du_lieu_mau {
+    background-color: #e2f3e8;
+    color: #075e2f;
+    border: 1px solid #b8ddc5;
+}
+
+#nut_du_lieu_mau:hover {
+    background-color: #c9e8d4;
+}
+
+/* Nút đặt lại */
+#nut_dat_lai {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+#nut_dat_lai:hover {
+    background-color: #dedede;
+}
