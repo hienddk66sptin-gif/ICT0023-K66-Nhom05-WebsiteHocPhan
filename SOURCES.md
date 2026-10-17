@@ -57,14 +57,14 @@ Ngày 12 tháng 10 năm 2026
 - Cách kiểm chứng: Mở file html trên trình duyệt chrome, thử co dãn tab của google to, nhỏ để kiểm tra tính responsive của trang web.
 
 
-Người Khai Báo: Lò Thị Thu Ngày 12/10/2026
+Người Khai Báo: Lò Thị Thu Ngày 13/10/2026
 
 1: Tài liệu -Không sử dụng
 
 2: Mã tham khảo -Không sử dụng
 
 3: Công cụ: Chat GPT
-- Ngày sử dụng: 12/10/2026
+- Ngày sử dụng: 13/10/2026
 - Prompt chính: “Hiện tại form nộp bài của tôi đã làm xong, nhưng vẫn thiếu chức năng nộp bài và hiện thông báo đã nộp bài thành công. Dựa vào đoạn code html hiện tại, hãy hướng dẫn tôi thực hiện chức năng đã nêu trên.”
 Phần tiếp nhận: Lấy cấu trúc JavaScript (nopbaitap.js) và thêm role="status" vào phần tử trang_thai_nop_bai trong baitapthietkeweb.html.
 - Phần loại bỏ: Không có
@@ -72,7 +72,7 @@ Phần tiếp nhận: Lấy cấu trúc JavaScript (nopbaitap.js) và thêm role
 
 Giao diện responsive
 1: Công cụ: Chat GPT
-- Ngày sử dụng: 12/10/2026
+- Ngày sử dụng: 13/10/2026
 - Prompt chính: “trang web của tôi đang thiếu responsive, hướng dẫn tôi từng bước để tôi responsive cho các mục html trong trang web của tôi phù hợp với các kích thước của màn hình máy tính, điện thoại”
 Phần tiếp nhận: Lấy cấu trúc CSS, tạo responsive.css và liên kết vào toàn bộ các trang HTML.
 - Phần loại bỏ: Không có
