@@ -87,7 +87,7 @@ Phần tiếp nhận: huongdanvahoidap.html, huongdan.css, huongdan.js (tạo da
 - Cách kiểm chứng:Gõ từ khóa vào ô tìm kiếm, mở/đóng từng câu hỏi, gửi biểu mẫu khi để trống và khi điền đủ.
 
 Giao diện chung (chân trang, hiệu ứng menu và thẻ)
-- Công cụ: điền, hoặc “Tự thực hiện”
+- Công cụ: Chat GBT, Claude.
 - Ngày sử dụng: 15/10/2026
 - Prompt chính: tôi muốn sửa lại ( khi di chuột và ấn vào hướng dẫn và hỏi đáp có hiện màu xanh nhạt ) khi di chuột và ấn vào hỏi đáp kia không con hiện màu xanh nữa; tôi muốn chữ gửi liên hệ khi di chuột vào có hiệu ứng nổi lên màu đỏ, tôi muốn phần khung ( trung tâm hướng dẫn học tập có hiệu ứng nổi lên) chỉnh sửa phần code.
 - Phần tiếp nhận: footer.css; gạch chân menu (nav a:hover::after, nav a.active::after) trong styles.css; hiệu ứng nhích lên và đổi màu nút trong trangchu.css`.
