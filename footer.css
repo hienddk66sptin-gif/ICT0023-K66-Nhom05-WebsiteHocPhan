@@ -1,0 +1,65 @@
+
+/* ===== FOOTER DÙNG CHUNG TOÀN WEBSITE ===== */
+
+footer {
+    background: linear-gradient(135deg, #075e2f, #064923);
+    color: #ffffff;
+    text-align: center;
+    padding: 28px 20px;
+    margin-top: 40px;
+    border-top: 4px solid #d4e8d9;
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Nội dung bên trong footer */
+footer p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+/* Liên kết trong footer, nếu có */
+footer a {
+    color: #d4f5df;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Hiển thị trên điện thoại */
+@media (max-width: 600px) {
+    footer {
+        padding: 22px 15px;
+        margin-top: 25px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
+html, body
+{ 
+    height: 100%;
+    margin: 0;
+}
+
+body 
+{
+    min-height: 100vh; /*đảm bảo trang cao ít nhất bằng chiều cao màn hình*/
+    display: flex; /*sắp xếp phần đầu trang, nội dung và footer theo chiều dọc.*/
+    flex-direction: column; /*sắp xếp phần đầu trang, nội dung và footer theo chiều dọc.*/
+}
+
+main 
+{
+    flex: 1; /*cho phép phần nội dung chiếm khoảng trống còn dư.*/
+}
+
+footer {
+    margin-top: auto;  /*đẩy footer xuống cuối trang khi nội dung ngắn.*/
+}

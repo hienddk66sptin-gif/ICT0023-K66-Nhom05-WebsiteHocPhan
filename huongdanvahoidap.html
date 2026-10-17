@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hướng dẫn và hỏi đáp - K66 ĐHSP Tin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="huongdan.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="dau_trang">
+            <img src="images/logo_TBU.png"
+                 class="logo_truong"
+                 alt="Logo Trường Đại học Tây Bắc">
+
+            <div>
+                <h1>Hướng dẫn và hỏi đáp</h1>
+            
+                <nav>
+                    <a href="./trangchu.html" >
+                        <i class="fa-solid fa-house"></i> Trang chủ
+                    </a>
+                    <a href="./index.html">
+                        <i class="fa-solid fa-book-open"></i> Học phần
+                    </a>
+                    <a href="./congcu.html">
+                        <i class="fa-solid fa-screwdriver-wrench"></i> Công cụ
+                    </a>
+                    <a href="./lienhe.html">
+                        <i class="fa-solid fa-envelope"></i> Liên hệ
+                    </a>
+                    <a href="./huongdanvahoidap.html" class="active">
+                        <i class="fa-solid fa-circle-question"></i> Hướng dẫn và hỏi đáp
+                    </a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-4">
+
+        <section class="text-center mb-4">
+            <h2>Trung tâm hướng dẫn học tập</h2>
+
+            <p>
+                Hướng dẫn sử dụng website, tìm hiểu các học phần,
+                tra cứu tài liệu và giải đáp những câu hỏi thường gặp.
+            </p>
+        </section>
+
+        <section class="mb-5" aria-labelledby="huong-dan-title">
+            <h2 id="huong-dan-title">1. Hướng dẫn sử dụng website</h2>
+
+            <div class="row g-3 mt-1">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Xem học phần</h3>
+                            <p class="card-text">
+                                Chọn mục Học phần trên menu để xem danh sách
+                                môn học và mở nội dung chi tiết của từng môn.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Xem tài liệu và bài tập</h3>
+                            <p class="card-text">
+                                Mở học phần cần tìm, sau đó xem phần tài liệu
+                                học tập và bài tập được giới thiệu trên trang.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Sử dụng công cụ</h3>
+                            <p class="card-text">
+                                Chọn mục Công cụ để sử dụng các tiện ích
+                                hỗ trợ học tập được cung cấp trên website.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5" aria-labelledby="faq-title">
+            <h2 id="faq-title">2. Câu hỏi thường gặp</h2>
+
+            <p>
+                Chọn một câu hỏi để xem phần giải đáp.
+            </p>
+
+            <div class="mb-3">
+                <label for="tu-khoa-faq" class="form-label">
+                    Tìm kiếm câu hỏi
+                </label>
+
+                <input type="search"
+                       id="tu-khoa-faq"
+                       class="form-control"
+                       placeholder="Nhập từ khóa cần tìm..."
+                       aria-describedby="ket-qua-faq">
+            </div>
+
+            <p id="ket-qua-faq" role="status" aria-live="polite">
+                Danh sách câu hỏi thường gặp.
+            </p>
+
+            <div class="accordion" id="danh-sach-faq">
+              <!-- JavaScript sẽ tự động tạo các câu hỏi tại đây -->
+            </div>
+            <p id="khong-tim-thay-faq" class="mt-3" hidden>
+        Không tìm thấy câu hỏi phù hợp. Hãy thử từ khóa khác.
+            </p>
+             </section>
+
+                <div class="accordion-item faq-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#cau-tra-loi-1"
+                                aria-expanded="false"
+                                aria-controls="cau-tra-loi-1">
+                            Làm thế nào để xem nội dung một học phần?
+                        </button>
+                    </h3>
+
+                    <div id="cau-tra-loi-1"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#danh-sach-faq">
+                        <div class="accordion-body">
+                            Chọn mục Học phần trên menu, tìm môn học cần xem
+                            rồi nhấn nút Xem học phần để mở trang chi tiết.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item faq-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#cau-tra-loi-2"
+                                aria-expanded="false"
+                                aria-controls="cau-tra-loi-2">
+                            Làm thế nào để tìm tài liệu học tập?
+                        </button>
+                    </h3>
+
+                    <div id="cau-tra-loi-2"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#danh-sach-faq">
+                        <div class="accordion-body">
+                            Mở học phần tương ứng và tìm mục Tài liệu học tập.
+                            Nhấn vào liên kết tài liệu để mở nếu tệp có sẵn
+                            và đường dẫn hoạt động.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item faq-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#cau-tra-loi-3"
+                                aria-expanded="false"
+                                aria-controls="cau-tra-loi-3">
+                            Nếu không mở được tài liệu thì phải làm gì?
+                        </button>
+                    </h3>
+
+                    <div id="cau-tra-loi-3"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#danh-sach-faq">
+                        <div class="accordion-body">
+                            Kiểm tra kết nối Internet, thử mở lại liên kết
+                            và kiểm tra xem tệp tài liệu có tồn tại trong
+                            thư mục dự án hay không.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item faq-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#cau-tra-loi-4"
+                                aria-expanded="false"
+                                aria-controls="cau-tra-loi-4">
+                            Website có lưu thông tin người dùng không?
+                        </button>
+                    </h3>
+
+                    <div id="cau-tra-loi-4"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#danh-sach-faq">
+                        <div class="accordion-body">
+                            Website hiện tại chủ yếu phục vụ mục đích học tập
+                            và minh họa chức năng trên trình duyệt.
+                            Không nhập thông tin cá nhân nhạy cảm vào các
+                            biểu mẫu thử nghiệm.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item faq-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#cau-tra-loi-5"
+                                aria-expanded="false"
+                                aria-controls="cau-tra-loi-5">
+                            Công cụ tính điểm dùng như thế nào?
+                        </button>
+                    </h3>
+
+                    <div id="cau-tra-loi-5"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#danh-sach-faq">
+                        <div class="accordion-body">
+                            Mở mục Công cụ, nhập các điểm thành phần theo
+                            hướng dẫn rồi thực hiện tính toán khi chức năng
+                            đã được hoàn thiện. Kết quả chỉ có giá trị tham khảo.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p id="khong-tim-thay-faq" class="mt-3" hidden>
+                Không tìm thấy câu hỏi phù hợp. Hãy thử từ khóa khác.
+            </p>
+        </section>
+
+        <br>
+
+        <section class="mb-4" aria-labelledby="gui-cau-hoi-title">
+            <h2 id="gui-cau-hoi-title">3. Gửi câu hỏi hoặc phản hồi</h2>
+
+            <p>
+                Bạn có thể nhập câu hỏi hoặc góp ý để giúp website
+                ngày càng hữu ích hơn.
+            </p>
+
+            <form id="form-hoi-dap" novalidate>
+                <div class="mb-3">
+                    <label for="ho-ten" class="form-label">
+                        Tên hiển thị
+                    </label>
+
+                    <input type="text"
+                           id="ho-ten"
+                           name="ho-ten"
+                           class="form-control"
+                           maxlength="60"
+                           required
+                           placeholder="Nhập tên hiển thị">
+                </div>
+
+                <div class="mb-3">
+                    <label for="chu-de" class="form-label">
+                        Chủ đề
+                    </label>
+
+                    <select id="chu-de"
+                            name="chu-de"
+                            class="form-select"
+                            required>
+                        <option value="">-- Chọn chủ đề --</option>
+                        <option value="hoc-phan">Học phần</option>
+                        <option value="tai-lieu">Tài liệu và bài tập</option>
+                        <option value="cong-cu">Công cụ học tập</option>
+                        <option value="giao-dien">Giao diện website</option>
+                        <option value="khac">Khác</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="noi-dung-cau-hoi" class="form-label">
+                        Nội dung câu hỏi hoặc phản hồi
+                    </label>
+
+                    <textarea id="noi-dung-cau-hoi"
+                              name="noi-dung-cau-hoi"
+                              class="form-control"
+                              rows="4"
+                              maxlength="500"
+                              required
+                              placeholder="Nhập nội dung tại đây..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                    Gửi phản hồi
+                </button>
+
+                <button type="reset" class="btn btn-outline-secondary">
+                    Nhập lại
+                </button>
+
+                <p id="trang-thai-form"
+                   class="mt-3"
+                   role="status"
+                   aria-live="polite"></p>
+            </form>
+
+            <p class="small text-muted mt-2">
+                Lưu ý: Đây là biểu mẫu minh họa. Nội dung chỉ được
+                kiểm tra trên trình duyệt, không gửi lên máy chủ
+                và không được lưu sau khi tải lại trang.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Website giới thiệu học phần, Nhóm 5</p>
+    </footer>
+   
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="huongdan.js"></script>
+</body>
+</html>
+ 
+</body>
+</html>
