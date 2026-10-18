@@ -8,5 +8,5 @@ Thành viên 4: Trịnh Thùy Dương || Tài khoản github: duongttk66sptin-co
 
 URL website: https://github.com/hienddk66sptin-gif/ICT0023-K66-Nhom05-WebsiteHocPhan
 
-Github pages: 
+Github pages: https://hienddk66sptin-gif.github.io/ICT0023-K66-Nhom05-WebsiteHocPhan/trangchu.html
 
