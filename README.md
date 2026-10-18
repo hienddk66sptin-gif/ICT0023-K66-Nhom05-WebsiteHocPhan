@@ -10,7 +10,7 @@ URL website: https://github.com/hienddk66sptin-gif/ICT0023-K66-Nhom05-WebsiteHoc
 
 Github pages: https://hienddk66sptin-gif.github.io/ICT0023-K66-Nhom05-WebsiteHocPhan/trangchu.html
 
-Video youtube: https://m.youtube.com/watch?feature=shared&v=Atp6I8_8lUo
+Video youtube: https://www.youtube.com/watch?v=a2Gni5ovhrM
 
 ## Chức năng chính
  - Hiển thị thông tin và tài liệu của 6 học phần dành cho sinh viên K66 Sư phạm Tin học.
@@ -37,7 +37,7 @@ Video youtube: https://m.youtube.com/watch?feature=shared&v=Atp6I8_8lUo
 ## Tài liệu và minh chứng
 - Báo cáo: được nộp kèm sản phẩm bài tập lớn.
 - Thuyết trình: được nộp kèm sản phẩm bài tập lớn.
-- Video giới thiệu và kiểm thử: https://m.youtube.com/watch?feature=shared&v=Atp6I8_8lUo
+- Video giới thiệu và kiểm thử: https://www.youtube.com/watch?v=a2Gni5ovhrM
 - Danh sách đóng góp: [CONTRIBUTIONS.md](CONTRIBUTIONS.md).
 - Nguồn tài nguyên: [SOURCES.md](SOURCES.md).
 
