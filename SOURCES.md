@@ -1,0 +1,95 @@
+Mẫu khai báo tài liệu, mã tham khảo, ảnh/dữ liệu, công cụ A.I
+
+1: Tài liệu
+- URL, tên tài liệu
+- Ngày truy cập: dd/mm/yyyy
+- Phần đã dùng(phần cụ thể trong nguồn)
+
+2: Mã tham khảo
+- URL / Tác giả: ...
+- Ngày truy cập: YYYY-MM-DD
+- Phần đã dùng & Cách chỉnh sửa / kiểm thử: ...
+
+3: Ảnh/ dữ liệu
+- Tên ảnh/dữ liệu & nguồn gốc: ...
+- Quyền sử dụng (bản quyền / tác giả): ..
+
+4: Công cụ A.I
+- Công cụ: ChatGPT / Gemini / Claude...
+- Ngày sử dụng: YYYY-MM-DD
+- Prompt chính: ...
+- Phần tiếp nhận / loại bỏ & cách kiểm chứng: ...
+
+
+Ngày 12 tháng 10 năm 2026
+
+1: Tài liệu
+-Không sử dụng
+
+2: Mã tham khảo
+-Không sử dụng
+
+3: Ảnh/ dữ liệu
+*Ảnh 1: Ảnh chụp trường đại học Tây Bắc
+-Tên ảnh: dai_hoc_tay_bac.jpg
+- Dữ liệu/nguồn gốc: Website của trường
+-Quyền sử dụng: Không có bản quyền hay tác giả cụ thể
+
+*Ảnh 2: Logo trường Đại Học Tây Bắc
+- Tên ảnh: logo_UTB.png
+- Dữ liệu/ nguồn gốc: https://haitrieu.com/blogs/vector-logo-truong-dai-hoc-tay-bac-utb/?srsltid=AU7gw4WkMLL1hXrTR2pu8XCd_46uzZga8Sdrlrsp3TcON81o1p8Y-uce
+- Quyền sử dụng: May in thêu Hải Chiều
+
+4: Công cụ A.I
+- Công cụ: Chat GPT
+- Ngày sử dụng: 12/10/2026
+- prompt chính: "Hiện tại form nộp bài của tôi đã làm xong, nhưng vẫn thiếu chức năng nộp bài và hiện thông báo đã nộp bài thành công. Dựa vào đoạn code html hiện tại, hãy hưỡng dẫn tôi thực hiện chức năng đã nên trên."
+- Phần tiếp nhận: Đã lấy toàn bộ cấu trúc Javascript và thêm vào phần html của baitapthietkeweb.html phần role="status" tại id trạng thái nộp bài, dòng 255
+- Phần loại bỏ: Không có
+- cách kiểm chứng: Mở file html trên trình duyệt chrome, up 1 file thử và ấn nộp bài, kết quả hệ thống đã ghi nhận bài nộp
+
+4.1: Công cụ A.I
+- Công cụ: Chat GPT
+- Ngày sử dụng: 12/10/2026 21:46
+- prompt chính: "trang web của tôi đang thiếu responsive, hưỡng dẫn tôi từng bước để tôi responsive cho các mục html trong trang web của tôi phù hợp với các kích thước của màn hình máy tính, điện thoại"
+- Phần tiếp nhận: Đã lấy các cấu trúc CSS, tạo 1 file CSS có tên là responsive để có thể cho toàn bộ tab html đều có responsive, cũng như bổ sung liên kết của responsive.css lên toàn bộ các trang html để toàn bộ web đều có chức năng responsive.
+- Phần loại bỏ: Không có
+- Cách kiểm chứng: Mở file html trên trình duyệt chrome, thử co dãn tab của google to, nhỏ để kiểm tra tính responsive của trang web.
+
+
+Người Khai Báo: Lò Thị Thu Ngày 13/10/2026
+
+1: Tài liệu -Không sử dụng
+
+2: Mã tham khảo -Không sử dụng
+
+3: Công cụ: Chat GPT
+- Ngày sử dụng: 13/10/2026
+- Prompt chính: “Hiện tại form nộp bài của tôi đã làm xong, nhưng vẫn thiếu chức năng nộp bài và hiện thông báo đã nộp bài thành công. Dựa vào đoạn code html hiện tại, hãy hướng dẫn tôi thực hiện chức năng đã nêu trên.”
+Phần tiếp nhận: Lấy cấu trúc JavaScript (nopbaitap.js) và thêm role="status" vào phần tử trang_thai_nop_bai trong baitapthietkeweb.html.
+- Phần loại bỏ: Không có
+- Cách kiểm chứng: Mở file HTML bằng Chrome, chọn thử 1 tệp rồi bấm “Nộp bài”. Hệ thống ghi nhận bài nộp.
+
+Giao diện responsive
+1: Công cụ: Chat GPT
+- Ngày sử dụng: 13/10/2026
+- Prompt chính: “trang web của tôi đang thiếu responsive, hướng dẫn tôi từng bước để tôi responsive cho các mục html trong trang web của tôi phù hợp với các kích thước của màn hình máy tính, điện thoại”
+Phần tiếp nhận: Lấy cấu trúc CSS, tạo responsive.css và liên kết vào toàn bộ các trang HTML.
+- Phần loại bỏ: Không có
+- Cách kiểm chứng: Mở bằng Chrome, thu/phóng cửa sổ trình duyệt để kiểm tra giao diện.
+  
+Trang hướng dẫn và hỏi đáp
+- Công cụ: Chat GPT
+- Ngày sử dụng: 15/10/2026
+- Prompt chính: bạn nhìn vào file bài hiện tại của tôi và yêu cầu này. Trước tôi đã nhờ bạn hỗ trợ nên chắc bạn còn nhớ yêu cầu, và đây là file mới. Hiện tại tôi muốn làm mục hưỡng dẫn và hỏi đáp nhưng không biết làm thế nào. Nội dung cũng không biết soạn nên bạn hãy chỉ tôi từng bước 1 để làm, khi có xác nhận của tôi là xong 1 bước thì mới sang bước tiếp theo, nhớ là thiết kế giao diện cho phù hợp với giao diện chung của web.
+Phần tiếp nhận: huongdanvahoidap.html, huongdan.css, huongdan.js (tạo danh sách câu hỏi bằng jQuery, tìm kiếm câu hỏi, kiểm tra biểu mẫu phản hồi), cách dùng accordion của Bootstrap 5.
+- Phần loại bỏ: không có
+- Cách kiểm chứng:Gõ từ khóa vào ô tìm kiếm, mở/đóng từng câu hỏi, gửi biểu mẫu khi để trống và khi điền đủ.
+
+Giao diện chung (chân trang, hiệu ứng menu và thẻ)
+- Công cụ: Chat GPT, Claude.
+- Ngày sử dụng: 15/10/2026
+- Prompt chính: tôi muốn sửa lại ( khi di chuột và ấn vào hướng dẫn và hỏi đáp có hiện màu xanh nhạt ) khi di chuột và ấn vào hỏi đáp kia không con hiện màu xanh nữa; tôi muốn chữ gửi liên hệ khi di chuột vào có hiệu ứng nổi lên màu đỏ, tôi muốn phần khung ( trung tâm hướng dẫn học tập có hiệu ứng nổi lên) chỉnh sửa phần code.
+- Phần tiếp nhận: footer.css; gạch chân menu (nav a:hover::after, nav a.active::after) trong styles.css; hiệu ứng nhích lên và đổi màu nút trong trangchu.css`.
+- Phần loại bỏ: không có
+- Cách kiểm chứng: Rê chuột vào menu và thẻ chức năng, thu nhỏ cửa sổ để xem chân trang trên điện thoại.
