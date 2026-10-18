@@ -10,15 +10,13 @@ URL website: https://github.com/hienddk66sptin-gif/ICT0023-K66-Nhom05-WebsiteHoc
 
 Github pages: https://hienddk66sptin-gif.github.io/ICT0023-K66-Nhom05-WebsiteHocPhan/trangchu.html
 
+Video youtube: https://m.youtube.com/watch?feature=shared&v=Atp6I8_8lUo
+
 ## Chức năng chính
  - Hiển thị thông tin và tài liệu của 6 học phần dành cho sinh viên K66 Sư phạm Tin học.
-   
 - Hỗ trợ tìm kiếm học phần 
-  
 - Tính điểm tổng kết học phần theo trọng số: quá trình 20%, giữa kỳ 30%, cuối kỳ 50%.
-  
 - Cung cấp dữ liệu mẫu và chức năng đặt lại trong công cụ tính điểm.
-  
 - Cung cấp biểu mẫu liên hệ có kiểm tra dữ liệu nhập.
 
   ## Công nghệ sử dụng
@@ -36,5 +34,15 @@ Github pages: https://hienddk66sptin-gif.github.io/ICT0023-K66-Nhom05-WebsiteHoc
 - **Trang hướng dẫn và hỏi đáp (`huongdanvahoidap.html`):** Hướng dẫn sử dụng website và giải đáp các câu hỏi thường gặp.
 - **Trang liên hệ (`lienhe.html`):** Cung cấp biểu mẫu liên hệ và phản hồi.
 
+## Tài liệu và minh chứng
+- Báo cáo: được nộp kèm sản phẩm bài tập lớn.
+- Thuyết trình: được nộp kèm sản phẩm bài tập lớn.
+- Video giới thiệu và kiểm thử: https://m.youtube.com/watch?feature=shared&v=Atp6I8_8lUo
+- Danh sách đóng góp: [CONTRIBUTIONS.md](CONTRIBUTIONS.md).
+- Nguồn tài nguyên: [SOURCES.md](SOURCES.md).
 
+## Hạn chế
+- Website chưa có hệ thống máy chủ và cơ sở dữ liệu.
+- Chức năng nộp bài tập chưa thực hiện việc tải tệp lên máy chủ thực tế.
+- Giao diện và khả năng hiển thị trên một số kích thước màn hình vẫn cần được cải thiện.
 
