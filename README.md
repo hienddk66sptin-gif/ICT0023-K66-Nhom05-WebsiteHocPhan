@@ -28,4 +28,13 @@ Github pages: https://hienddk66sptin-gif.github.io/ICT0023-K66-Nhom05-WebsiteHoc
 - GitHub: quản lý mã nguồn và lịch sử phát triển.
 - GitHub Pages: triển khai website công khai.
 
+## Các trang chính của website
+- **Trang chủ (`trangchu.html`):** Giới thiệu hệ thống học tập dành cho sinh viên K66.
+- **Trang học phần (`index.html`):** Hiển thị danh sách các học phần và hỗ trợ người dùng tìm hiểu nội dung học tập.
+- **Trang chi tiết học phần:** Cung cấp thông tin, mục tiêu, nội dung và tài liệu tham khảo của từng học phần.
+- **Trang công cụ (`congcu.html`):** Cung cấp công cụ tính điểm tổng kết học phần.
+- **Trang hướng dẫn và hỏi đáp (`huongdanvahoidap.html`):** Hướng dẫn sử dụng website và giải đáp các câu hỏi thường gặp.
+- **Trang liên hệ (`lienhe.html`):** Cung cấp biểu mẫu liên hệ và phản hồi.
+
+
 
